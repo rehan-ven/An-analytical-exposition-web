@@ -1,0 +1,3616 @@
+
+Interactive_English_Learning__Say_No_to_Plastic.html
+100%
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="artifact-type" content="narrative">
+  <meta name="design-style" content="canopy">
+  <title>Say No to Single-Use Plastic — Analytical Exposition Learning Module</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+
+      /* 1. Canopy style tokens (earth strata & eco-palette) */
+      --background: #faf6ef;
+      --surface-container-low: #f0eae0;
+      --surface-container: #e8e0d2;
+      --surface-container-high: #ddd3c2;
+
+      /* Ink */
+      --on-surface: #2a302b;
+      --on-surface-variant: #4a524b;
+
+      /* Lines */
+      --outline: #737872;
+      --outline-variant: #cbc5b8;
+
+      /* Accents */
+      --primary: #366948;
+      --on-primary: #ffffff;
+      --primary-container: #d8efe0;
+      --on-primary-container: #1f4d30;
+      --secondary: #5c635c;
+      --tertiary: #8f5822;
+      --tertiary-container: #f2d4a7;
+      --on-tertiary-container: #6e3f0c;
+      --error: #b83230;
+      --on-error: #ffffff;
+      --error-container: #f9dedc;
+      --on-error-container: #7c1d1b;
+
+      /* Eco-water & semantic tokens */
+      --water-deep: #2b5b6c;
+      --water-mid: #4b6b78;
+      --water-light: #dcecf0;
+      --water-ink: #1b4353;
+      --positive: #2d6a4f;
+      --positive-container: #d8efe0;
+      --warning: #8f5822;
+      --focus: #366948;
+
+      /* Data series */
+      --data-1: #366948;
+      --data-2: #8f5822;
+      --data-3: #a85438;
+      --data-4: #4b6b78;
+      --data-context: #b5b0a3;
+
+      /* Highlight tokens for Interactive Text Analysis */
+      --hl-thesis-bg: #d8efe0;
+      --hl-thesis-ink: #1f4d30;
+      --hl-arg-bg: #dcecf0;
+      --hl-arg-ink: #1b4353;
+      --hl-reit-bg: #f2d4a7;
+      --hl-reit-ink: #6e3f0c;
+      --hl-grammar-bg: #e9e2f4;
+      --hl-grammar-ink: #3c2863;
+
+      /* Fonts */
+      --font-headline: 'Literata', serif;
+      --font-body: 'Nunito Sans', sans-serif;
+      --font-label: 'Geist Mono', monospace;
+
+      /* Type scale (Narrative) */
+      --display-size: clamp(2.15rem, 1.35rem + 3vw, 3.5rem);
+      --headline-size: clamp(1.55rem, 1.2rem + 1.4vw, 2.2rem);
+      --subhead-size: clamp(1.15rem, 1.05rem + 0.5vw, 1.4rem);
+      --body-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+      --label-size: clamp(0.75rem, 0.72rem + 0.12vw, 0.8125rem);
+
+      /* Shape */
+      --rounded: 0.625rem;
+      --rounded-lg: 1rem;
+      --rounded-full: 9999px;
+
+      /* Spacing scale (4pt base) */
+      --space-2xs: 0.125rem;
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2.5rem;
+      --space-2xl: 4rem;
+
+      /* Style effects */
+      --shadow-soft: 0 4px 20px rgb(42 48 43 / 0.06);
+      --shadow-soft-hover: 0 8px 28px rgb(42 48 43 / 0.1);
+      --border-soft: 1px solid rgb(203 197 184 / 0.7);
+      --focus-glow: 0 0 0 3px rgb(54 105 72 / 0.28);
+
+      /* Motion */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-micro: 120ms;
+      --dur-short: 220ms;
+      --dur-long: 420ms;
+    }
+
+    /* Base reset */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      overflow-x: clip;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--on-surface);
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+    }
+    header { position: static !important; }
+
+    /* Projector / Teacher Presentation Mode scaling */
+    body.presentation-mode {
+      --body-size: clamp(1.125rem, 1.05rem + 0.35vw, 1.32rem);
+      --headline-size: clamp(1.85rem, 1.4rem + 1.8vw, 2.65rem);
+      --subhead-size: clamp(1.3rem, 1.15rem + 0.7vw, 1.65rem);
+    }
+
+    .page-grid {
+      display: grid;
+      gap: var(--space-lg);
+      padding: var(--space-lg);
+      max-width: 1120px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .page-grid * { min-width: 0; }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: var(--font-headline);
+      color: var(--on-surface);
+      margin: 0;
+      line-height: 1.15;
+    }
+    h1 {
+      font-size: var(--display-size);
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+    h2 {
+      font-size: var(--headline-size);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: var(--subhead-size);
+      font-weight: 600;
+    }
+    p {
+      margin: 0;
+      max-width: 68ch;
+    }
+    .kicker {
+      font-family: var(--font-body);
+      font-size: var(--label-size);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--tertiary);
+    }
+    .mono-label {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--secondary);
+    }
+
+    /* Top Course Bar & Canopy Almanac Step Strip */
+    .lesson-header {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      padding-bottom: var(--space-md);
+      border-bottom: var(--border-soft);
+    }
+    .header-top-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+    }
+    .brand-cluster {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+    .brand-title {
+      font-family: var(--font-headline);
+      font-size: clamp(1.05rem, 0.98rem + 0.4vw, 1.25rem);
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .header-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    /* Canopy Almanac Phenology / Step Rhythm Bar */
+    .season-strip {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-sm) var(--space-md);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+    }
+    .season-meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+    .season-cells {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xs);
+      align-items: center;
+    }
+    .season-step-btn {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      font-weight: 600;
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      border-radius: var(--rounded);
+      border: 0;
+      background: var(--surface-container-high);
+      color: var(--on-surface-variant);
+      cursor: pointer;
+      transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out);
+    }
+    .season-step-btn:hover {
+      background: var(--surface-container);
+      color: var(--on-surface);
+      transform: translateY(-1px);
+    }
+    .season-step-btn.is-prep {
+      background: var(--tertiary-container);
+      color: var(--on-tertiary-container);
+    }
+    .season-step-btn.is-peak {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+    .season-step-btn:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+      box-shadow: var(--focus-glow);
+    }
+
+    /* Progress bar */
+    .progress-track {
+      width: 100%;
+      height: 8px;
+      background: var(--surface-container);
+      border-radius: var(--rounded-full);
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 12.5%;
+      background: var(--primary);
+      border-radius: var(--rounded-full);
+      transition: width var(--dur-long) var(--ease-out);
+    }
+
+    /* Cards & Layout Blocks */
+    .card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+      border: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+    .card.is-leaf-highlight {
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+    .card.is-leaf-highlight h2,
+    .card.is-leaf-highlight h3,
+    .card.is-leaf-highlight h4 {
+      color: var(--on-primary-container);
+    }
+    .card.is-water-highlight {
+      background: var(--water-light);
+      color: var(--water-ink);
+    }
+    .card.is-water-highlight h3 {
+      color: var(--water-ink);
+    }
+    .card.is-interactive {
+      box-shadow: var(--shadow-soft);
+      transition: transform var(--dur-short) var(--ease-out), box-shadow var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+    .card.is-interactive:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft-hover);
+    }
+    .card-surface-deep {
+      background: var(--surface-container);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-md);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    /* Asymmetric & Adaptive Grids */
+    .hero-split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: var(--space-xl);
+      align-items: center;
+    }
+    .two-col-split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      gap: var(--space-lg);
+      align-items: start;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+
+    /* Buttons & Controls */
+    .btn {
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      font-weight: 700;
+      min-height: 44px;
+      padding: var(--space-sm) var(--space-lg);
+      border-radius: var(--rounded);
+      border: 0;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      text-decoration: none;
+      transition: background-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out), box-shadow var(--dur-micro) var(--ease-out);
+    }
+    .btn:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+      box-shadow: var(--focus-glow);
+    }
+    .btn:active:not(:disabled) {
+      transform: translateY(1px);
+    }
+    .btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+    .btn-primary:hover:not(:disabled) {
+      background: var(--on-primary-container);
+    }
+    .btn-secondary {
+      background: var(--surface-container);
+      color: var(--on-surface);
+    }
+    .btn-secondary:hover:not(:disabled) {
+      background: var(--surface-container-high);
+    }
+    .btn-tertiary {
+      background: var(--tertiary-container);
+      color: var(--on-tertiary-container);
+    }
+    .btn-tertiary:hover:not(:disabled) {
+      background: var(--tertiary);
+      color: var(--on-primary);
+    }
+    .btn-water {
+      background: var(--water-deep);
+      color: var(--on-primary);
+    }
+    .btn-water:hover:not(:disabled) {
+      background: var(--water-ink);
+    }
+    .btn-sm {
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-md);
+      font-size: var(--label-size);
+      font-family: var(--font-label);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Tags & Badges */
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--rounded);
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .tag-ochre {
+      background: var(--tertiary-container);
+      color: var(--on-tertiary-container);
+    }
+    .tag-leaf {
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+    .tag-water {
+      background: var(--water-light);
+      color: var(--water-ink);
+    }
+    .tag-neutral {
+      background: var(--surface-container-high);
+      color: var(--on-surface-variant);
+    }
+
+    /* Step Pages */
+    .step-page {
+      display: none;
+      flex-direction: column;
+      gap: var(--space-xl);
+      animation: pageEnter var(--dur-long) var(--ease-out);
+    }
+    .step-page.is-active {
+      display: flex;
+    }
+    @keyframes pageEnter {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-intro {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    /* Step Footer Navigation (Back / Next / Continue) */
+    .step-nav-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding-top: var(--space-lg);
+      border-top: var(--border-soft);
+      margin-top: var(--space-sm);
+    }
+
+    /* Inputs & Labels */
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+    .field-label {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--on-surface);
+    }
+    .field-input, .field-textarea {
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      color: var(--on-surface);
+      background: var(--background);
+      border: 1.5px solid var(--outline);
+      border-radius: var(--rounded);
+      padding: var(--space-sm) var(--space-md);
+      width: 100%;
+      transition: box-shadow var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+    .field-textarea {
+      min-height: 92px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+    .field-input:focus-visible, .field-textarea:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 1px;
+      box-shadow: var(--focus-glow);
+    }
+
+    /* Quick choice chips */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+    .choice-chip {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--rounded);
+      border: 1.5px solid var(--outline-variant);
+      background: var(--background);
+      color: var(--on-surface);
+      cursor: pointer;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+    .choice-chip:hover {
+      background: var(--surface-container);
+    }
+    .choice-chip.is-selected {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+    .choice-chip:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    /* Vocabulary Audio Cards */
+    .vocab-card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-md);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      cursor: pointer;
+      text-align: left;
+      border: 2px solid transparent;
+      transition: transform var(--dur-short) var(--ease-out), box-shadow var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+    .vocab-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft-hover);
+    }
+    .vocab-card:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+      box-shadow: var(--focus-glow);
+    }
+    .vocab-card.is-revealed {
+      background: var(--background);
+      border-color: var(--primary);
+    }
+    .vocab-card.is-speaking {
+      background: var(--primary-container);
+      border-color: var(--primary);
+    }
+    .vocab-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--space-sm);
+    }
+    .vocab-word {
+      font-family: var(--font-headline);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--on-surface);
+    }
+    .vocab-phonetic {
+      font-family: var(--font-label);
+      font-size: 0.8rem;
+      color: var(--tertiary);
+    }
+    .audio-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--rounded-full);
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      font-family: var(--font-label);
+      font-size: 0.72rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .vocab-detail {
+      display: none;
+      flex-direction: column;
+      gap: var(--space-xs);
+      padding-top: var(--space-xs);
+      border-top: var(--border-soft);
+      font-size: 0.94rem;
+    }
+    .vocab-card.is-revealed .vocab-detail {
+      display: flex;
+    }
+    .vocab-example {
+      font-style: italic;
+      color: var(--on-surface-variant);
+      font-size: 0.9rem;
+    }
+
+    /* Vocabulary Matching Columns */
+    .matching-board {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+      gap: var(--space-lg);
+      align-items: start;
+    }
+    .match-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .match-item {
+      min-height: 48px;
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--rounded);
+      border: 2px solid var(--outline-variant);
+      background: var(--background);
+      color: var(--on-surface);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+    .match-item:hover:not(:disabled) {
+      background: var(--surface-container-low);
+    }
+    .match-item.is-selected {
+      border-color: var(--primary);
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+    .match-item.is-paired {
+      border-color: var(--water-mid);
+      background: var(--water-light);
+      color: var(--water-ink);
+    }
+    .match-item.is-correct {
+      border-color: var(--positive);
+      background: var(--positive-container);
+      color: var(--on-primary-container);
+    }
+    .match-item.is-wrong {
+      border-color: var(--error);
+      background: var(--error-container);
+      color: var(--on-error-container);
+    }
+
+    /* Reading Passage Area */
+    .passage-panel {
+      background: var(--background);
+      border: var(--border-soft);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+    .passage-panel.font-large p.passage-para {
+      font-size: 1.25rem;
+      line-height: 1.75;
+    }
+    .passage-title {
+      font-family: var(--font-headline);
+      font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.55rem);
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.01em;
+    }
+    .passage-para {
+      font-family: var(--font-body);
+      font-size: 1.0625rem;
+      line-height: 1.72;
+      color: var(--on-surface);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--rounded);
+      border-left: 4px solid transparent;
+      transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out);
+    }
+    .passage-para.hl-thesis {
+      background: var(--hl-thesis-bg);
+      border-left-color: var(--primary);
+      cursor: pointer;
+    }
+    .passage-para.hl-arguments {
+      background: var(--hl-arg-bg);
+      border-left-color: var(--water-deep);
+      cursor: pointer;
+    }
+    .passage-para.hl-reiteration {
+      background: var(--hl-reit-bg);
+      border-left-color: var(--tertiary);
+      cursor: pointer;
+    }
+    .passage-para.hl-evidence-focus {
+      background: var(--tertiary-container);
+      border-left-color: var(--tertiary);
+    }
+    .lang-span {
+      padding: 1px 4px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color var(--dur-micro) var(--ease-out);
+    }
+    .lang-span.active-present { background: var(--primary-container); color: var(--on-primary-container); }
+    .lang-span.active-modal { background: var(--tertiary-container); color: var(--on-tertiary-container); }
+    .lang-span.active-connective { background: var(--water-light); color: var(--water-ink); }
+    .lang-span.active-evaluative { background: var(--hl-grammar-bg); color: var(--hl-grammar-ink); }
+    .lang-span.active-vocab { text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 2px; text-underline-offset: 3px; color: var(--primary); }
+
+    /* Structure Diagram Interactive Buttons */
+    .structure-flow {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-sm);
+    }
+    .structure-node {
+      background: var(--background);
+      border: 2px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      padding: var(--space-md);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+      transition: border-color var(--dur-micro) var(--ease-out), background-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out);
+    }
+    .structure-node:hover {
+      transform: translateY(-2px);
+    }
+    .structure-node.is-active {
+      border-color: var(--primary);
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+
+    /* MCQ Options */
+    .mcq-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .mcq-option {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      min-height: 48px;
+      padding: var(--space-sm) var(--space-md);
+      background: var(--background);
+      border: 1.5px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      cursor: pointer;
+      text-align: left;
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      color: var(--on-surface);
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+    .mcq-option:hover:not(:disabled) {
+      background: var(--surface-container-low);
+      border-color: var(--outline);
+    }
+    .mcq-option.is-selected {
+      background: var(--primary-container);
+      border-color: var(--primary);
+      color: var(--on-primary-container);
+      font-weight: 700;
+    }
+    .mcq-option.is-correct-reveal {
+      background: var(--positive-container);
+      border-color: var(--positive);
+      color: var(--on-primary-container);
+    }
+    .mcq-option.is-wrong-reveal {
+      background: var(--error-container);
+      border-color: var(--error);
+      color: var(--on-error-container);
+    }
+    .mcq-letter {
+      font-family: var(--font-label);
+      font-weight: 700;
+      width: 28px;
+      height: 28px;
+      border-radius: var(--rounded-full);
+      background: var(--surface-container);
+      color: var(--on-surface);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .mcq-option.is-selected .mcq-letter {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    /* Feedback & Callout Banners */
+    .feedback-box {
+      padding: var(--space-md);
+      border-radius: var(--rounded);
+      border-left: 4px solid var(--primary);
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+    .feedback-box.is-warning {
+      border-left-color: var(--tertiary);
+      background: var(--tertiary-container);
+      color: var(--on-tertiary-container);
+    }
+    .feedback-box.is-error {
+      border-left-color: var(--error);
+      background: var(--error-container);
+      color: var(--on-error-container);
+    }
+    .feedback-box.is-water {
+      border-left-color: var(--water-deep);
+      background: var(--water-light);
+      color: var(--water-ink);
+    }
+
+    /* Tables (Canopy style: no vertical lines, Geist Mono headers) */
+    .almanac-table-wrap {
+      overflow-x: auto;
+    }
+    .almanac-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .almanac-table th {
+      background: var(--surface-container);
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--on-surface-variant);
+      padding: var(--space-sm) var(--space-md);
+      border-bottom: 1.5px solid var(--outline-variant);
+    }
+    .almanac-table td {
+      padding: var(--space-sm) var(--space-md);
+      border-bottom: var(--border-soft);
+      vertical-align: top;
+      font-size: 0.95rem;
+    }
+
+    /* Toolkit Sub-Tabs on Page 7 */
+    .subtab-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+    .subtab-btn {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--rounded);
+      border: 1.5px solid var(--outline-variant);
+      background: var(--background);
+      color: var(--on-surface-variant);
+      cursor: pointer;
+    }
+    .subtab-btn.is-active {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+    .subtab-panel {
+      display: none;
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+    .subtab-panel.is-active {
+      display: flex;
+    }
+
+    /* SVG Illustration Frame */
+    .illustration-frame {
+      background: var(--water-light);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .illustration-frame svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--rounded);
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 820px) {
+      .hero-split,
+      .two-col-split,
+      .matching-board {
+        grid-template-columns: 1fr;
+      }
+      .structure-flow {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 640px) {
+      .page-grid {
+        padding: var(--space-md);
+        gap: var(--space-md);
+      }
+      .passage-panel {
+        padding: var(--space-md);
+      }
+      .season-strip {
+        padding: var(--space-sm);
+      }
+    }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-grid">
+    <!-- HEADER & LESSON NAVIGATION STRIP -->
+    <header class="lesson-header">
+      <div class="header-top-row">
+        <div class="brand-cluster">
+          <span class="kicker">Grade XI English · Phase F · Analytical Exposition (90 Min)</span>
+          <div class="brand-title">Say No to Single-Use Plastic</div>
+        </div>
+        <div class="header-controls">
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-teacher-mode" onclick="togglePresentationMode()">
+            Projector Mode: Off
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-reset-all" onclick="handleResetProgress(this)">
+            Reset Progress
+          </button>
+        </div>
+      </div>
+
+      <!-- Canopy Almanac Step Rhythm Strip -->
+      <nav class="season-strip" aria-label="Lesson step navigation">
+        <div class="season-meta">
+          <span class="mono-label" id="step-counter-label">Step 1 of 8 · Overview</span>
+          <span class="tag tag-leaf" id="completion-badge">0% Completed</span>
+        </div>
+        <div class="season-cells" id="step-cells">
+          <button type="button" class="season-step-btn is-peak" data-step="0" onclick="goToStep(0)">01 Start</button>
+          <button type="button" class="season-step-btn" data-step="1" onclick="goToStep(1)">02 Open</button>
+          <button type="button" class="season-step-btn" data-step="2" onclick="goToStep(2)">03 BKOF</button>
+          <button type="button" class="season-step-btn" data-step="3" onclick="goToStep(3)">04 MOT</button>
+          <button type="button" class="season-step-btn" data-step="4" onclick="goToStep(4)">05 JCOT</button>
+          <button type="button" class="season-step-btn" data-step="5" onclick="goToStep(5)">06 ICOT</button>
+          <button type="button" class="season-step-btn" data-step="6" onclick="goToStep(6)">07 Reflect</button>
+          <button type="button" class="season-step-btn" data-step="7" onclick="goToStep(7)">08 Toolkit</button>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="lesson-progress-bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="lesson-main">
+      <!-- ========================================================= -->
+      <!-- STEP 0: LANDING / OVERVIEW -->
+      <!-- ========================================================= -->
+      <section class="step-page is-active" id="step-0" aria-labelledby="title-step-0">
+        <div class="hero-split">
+          <div class="page-intro">
+            <span class="kicker">Interactive Reading Studio · Genre-Based Approach</span>
+            <h1 id="title-step-0">Say No to Single-Use Plastic</h1>
+            <p class="subhead" style="font-family: var(--font-headline); font-size: var(--subhead-size); color: var(--on-surface-variant);">
+              Understanding Analytical Exposition Through Reading Strategies
+            </p>
+            <p>
+              Welcome to your interactive Grade XI English learning module. Across this 90-minute guided lesson, you will explore how writers persuade readers using structured arguments, build key environmental vocabulary with audio pronunciation, practice Academic Ability Test (TKA)-oriented reading strategies, and justify answers using textual evidence.
+            </p>
+            <div class="chip-row" style="padding-top: var(--space-xs);">
+              <span class="tag tag-leaf">Grade XI · Phase F</span>
+              <span class="tag tag-ochre">Semester 1 · 2026/2027</span>
+              <span class="tag tag-water">2 × 45 Min (90 Min)</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); padding-top: var(--space-sm);">
+              <button type="button" class="btn btn-primary" onclick="goToStep(1)">
+                Start Learning &rarr;
+              </button>
+              <button type="button" class="btn btn-secondary" onclick="goToStep(7)">
+                Open Glossary &amp; Strategy Card
+              </button>
+            </div>
+          </div>
+
+          <!-- Environmental Vector Illustration -->
+          <div class="illustration-frame">
+            <svg viewBox="0 0 480 340" role="img" aria-label="Illustration of plastic bottles and bags polluting a river beside a clean reusable future">
+              <rect x="0" y="0" width="480" height="340" fill="var(--water-light)"/>
+              <!-- Sky & Sun -->
+              <rect x="0" y="0" width="480" height="145" fill="var(--background)"/>
+              <circle cx="400" cy="64" r="34" fill="var(--tertiary-container)"/>
+              <!-- Distant Hills -->
+              <path d="M0 145 Q110 90 230 135 T480 120 L480 165 L0 165 Z" fill="var(--primary-container)"/>
+              <path d="M0 155 Q150 120 310 148 T480 142 L480 175 L0 175 Z" fill="var(--primary)"/>
+              <!-- River Band -->
+              <rect x="0" y="165" width="480" height="175" fill="var(--water-mid)"/>
+              <path d="M20 205 Q100 192 180 205 T340 205 T470 205" stroke="var(--water-light)" stroke-width="3" fill="none" opacity="0.6"/>
+              <path d="M0 265 Q90 250 190 265 T390 265 T480 260" stroke="var(--water-light)" stroke-width="3" fill="none" opacity="0.5"/>
+              <!-- Floating Single-Use Plastic Bottle 1 -->
+              <g transform="translate(85, 200) rotate(-14)">
+                <rect x="0" y="10" width="54" height="24" rx="6" fill="var(--background)" stroke="var(--on-surface)" stroke-width="2"/>
+                <rect x="54" y="16" width="10" height="12" rx="2" fill="var(--tertiary)"/>
+                <line x1="16" y1="12" x2="16" y2="32" stroke="var(--water-mid)" stroke-width="2"/>
+                <line x1="34" y1="12" x2="34" y2="32" stroke="var(--water-mid)" stroke-width="2"/>
+              </g>
+              <!-- Floating Plastic Cup with Straw -->
+              <g transform="translate(215, 232) rotate(12)">
+                <polygon points="6,10 38,10 32,50 12,50" fill="var(--background)" stroke="var(--on-surface)" stroke-width="2"/>
+                <rect x="3" y="5" width="38" height="7" rx="3" fill="var(--tertiary-container)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                <line x1="25" y1="-12" x2="22" y2="8" stroke="var(--error)" stroke-width="3" stroke-linecap="round"/>
+              </g>
+              <!-- Floating Plastic Bag -->
+              <g transform="translate(335, 195) rotate(-8)">
+                <path d="M10 15 Q20 2 28 15 L42 15 Q50 2 58 15 L62 52 Q35 60 8 52 Z" fill="var(--surface-container-low)" stroke="var(--on-surface)" stroke-width="2" opacity="0.9"/>
+                <line x1="24" y1="26" x2="44" y2="40" stroke="var(--error)" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="44" y1="26" x2="24" y2="40" stroke="var(--error)" stroke-width="2.5" stroke-linecap="round"/>
+              </g>
+              <!-- Banner Overlay -->
+              <rect x="24" y="20" width="286" height="58" rx="10" fill="var(--surface-container-low)" stroke="var(--primary)" stroke-width="2"/>
+              <text x="40" y="45" font-family="Literata, serif" font-size="16" font-weight="700" fill="var(--primary)">SAY NO TO SINGLE-USE PLASTIC</text>
+              <text x="40" y="65" font-family="Geist Mono, monospace" font-size="11" font-weight="600" fill="var(--tertiary)">REDUCE · REUSE · RECYCLE</text>
+            </svg>
+            <span class="mono-label">Visual Anchor · River &amp; Marine Plastic Pollution</span>
+          </div>
+        </div>
+
+        <!-- Four GBA Stages Overview -->
+        <div class="card is-leaf-highlight">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm);">
+            <div>
+              <span class="mono-label" style="color: var(--on-primary-container);">Instructional Sequence · 90 Minutes Total</span>
+              <h3>Four Stages of the Genre-Based Approach (GBA)</h3>
+            </div>
+            <span class="tag tag-ochre">Explicit Strategy Instruction</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="mono-label">Stage 1 · 10 Min</span>
+              <h4>BKOF — Building Knowledge</h4>
+              <p style="font-size: 0.95rem;">Explore key environmental vocabulary with audio pronunciation and learn the READ &rarr; FIND &rarr; THINK &rarr; ANSWER strategy.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="mono-label">Stage 2 · 15 Min</span>
+              <h4>MOT — Modelling of the Text</h4>
+              <p style="font-size: 0.95rem;">Analyze the structure, language features, and Teacher Think-Aloud walkthrough of <em>Schools Should Reduce Single-Use Plastic</em>.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="mono-label">Stage 3 · 15 Min</span>
+              <h4>JCOT — Joint Construction</h4>
+              <p style="font-size: 0.95rem;">Work collaboratively on six TKA-style comprehension questions and practice justifying answers with textual evidence.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="mono-label">Stage 4 · 20 Min</span>
+              <h4>ICOT — Independent Practice</h4>
+              <p style="font-size: 0.95rem;">Complete an independent reading assessment on <em>Schools Should Provide Waste Sorting Bins</em> with automatic scoring.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-nav-footer">
+          <span class="mono-label">Step 1 of 8 · Ready to begin</span>
+          <button type="button" class="btn btn-primary" onclick="goToStep(1)">
+            Continue to Opening Activity &rarr;
+          </button>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- STEP 1: OPENING ACTIVITY (15 MIN) -->
+      <!-- ========================================================= -->
+      <section class="step-page" id="step-1" aria-labelledby="title-step-1">
+        <div class="page-intro">
+          <span class="kicker">Opening Activity · 15 Minutes · Diagnostic Warm-Up</span>
+          <h2 id="title-step-1">Visual Exploration &amp; Lesson Objectives</h2>
+          <p>
+            Observe the environmental scene below, respond to the four warm-up questions individually or during classroom discussion, and review what you will achieve in today's lesson.
+          </p>
+        </div>
+
+        <!-- A. Visual Exploration -->
+        <div class="two-col-split">
+          <div class="illustration-frame">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: var(--space-sm); flex-wrap: wrap;">
+              <span class="mono-label" id="scene-caption-label">Scene A · Plastic Waste in Waterways</span>
+              <button type="button" class="btn btn-water btn-sm" id="btn-toggle-scene" onclick="toggleSceneComparison()">
+                Switch to Clean Future View
+              </button>
+            </div>
+            <svg id="opening-svg" viewBox="0 0 500 320" role="img" aria-label="Interactive illustration comparing plastic waste pollution in rivers with reusable habits">
+              <rect x="0" y="0" width="500" height="320" fill="var(--water-light)"/>
+              <rect x="0" y="0" width="500" height="125" fill="var(--background)"/>
+              <path d="M0 125 Q120 85 250 115 T500 105 L500 155 L0 155 Z" fill="var(--primary-container)"/>
+              <rect x="0" y="150" width="500" height="170" fill="var(--water-deep)"/>
+              <path d="M15 190 Q110 176 210 190 T410 190 T490 186" stroke="var(--water-light)" stroke-width="3" fill="none" opacity="0.55"/>
+              <path d="M10 250 Q130 236 250 250 T480 245" stroke="var(--water-light)" stroke-width="3" fill="none" opacity="0.45"/>
+
+              <!-- Polluted State Group -->
+              <g id="svg-polluted-group">
+                <g transform="translate(70, 185) rotate(-18)">
+                  <rect x="0" y="8" width="58" height="24" rx="6" fill="var(--background)" stroke="var(--on-surface)" stroke-width="2"/>
+                  <rect x="58" y="14" width="10" height="12" rx="2" fill="var(--error)"/>
+                </g>
+                <g transform="translate(195, 225) rotate(14)">
+                  <polygon points="8,8 42,8 36,52 14,52" fill="var(--background)" stroke="var(--on-surface)" stroke-width="2"/>
+                  <line x1="25" y1="-10" x2="23" y2="8" stroke="var(--error)" stroke-width="3"/>
+                </g>
+                <g transform="translate(310, 178) rotate(-9)">
+                  <path d="M8 14 Q18 2 26 14 L40 14 Q48 2 56 14 L60 50 Q32 58 6 50 Z" fill="var(--surface-container-low)" stroke="var(--on-surface)" stroke-width="2"/>
+                </g>
+                <g transform="translate(390, 232) rotate(22)">
+                  <rect x="0" y="0" width="44" height="28" rx="4" fill="var(--tertiary-container)" stroke="var(--on-surface)" stroke-width="2"/>
+                  <text x="8" y="18" font-family="Geist Mono, monospace" font-size="10" font-weight="700" fill="var(--on-tertiary-container)">WRAP</text>
+                </g>
+                <text x="24" y="42" font-family="Literata, serif" font-size="20" font-weight="700" fill="var(--error)">Single-Use Plastic Piles Up</text>
+                <text x="24" y="66" font-family="Nunito Sans, sans-serif" font-size="13" fill="var(--on-surface-variant)">Used for minutes, pollutes soil and marine life for hundreds of years.</text>
+              </g>
+
+              <!-- Clean Reusable State Group -->
+              <g id="svg-clean-group" style="display: none;">
+                <!-- Reusable Bottle -->
+                <g transform="translate(105, 175)">
+                  <rect x="0" y="18" width="44" height="78" rx="10" fill="var(--primary-container)" stroke="var(--primary)" stroke-width="2.5"/>
+                  <rect x="11" y="4" width="22" height="14" rx="4" fill="var(--primary)"/>
+                  <path d="M14 55 L22 44 L30 55 L22 66 Z" fill="var(--primary)"/>
+                </g>
+                <!-- Refill Station -->
+                <g transform="translate(220, 165)">
+                  <rect x="0" y="0" width="68" height="96" rx="8" fill="var(--surface-container-low)" stroke="var(--primary)" stroke-width="2.5"/>
+                  <rect x="12" y="16" width="44" height="26" rx="4" fill="var(--water-light)"/>
+                  <circle cx="34" cy="64" r="10" fill="var(--water-deep)"/>
+                  <text x="11" y="88" font-family="Geist Mono, monospace" font-size="9" font-weight="700" fill="var(--primary)">REFILL</text>
+                </g>
+                <!-- Happy Fish -->
+                <g transform="translate(345, 220)">
+                  <ellipse cx="32" cy="18" rx="24" ry="13" fill="var(--tertiary-container)" stroke="var(--tertiary)" stroke-width="2"/>
+                  <polygon points="55,18 72,8 72,28" fill="var(--tertiary)"/>
+                  <circle cx="19" cy="15" r="2.5" fill="var(--on-surface)"/>
+                </g>
+                <text x="24" y="42" font-family="Literata, serif" font-size="20" font-weight="700" fill="var(--primary)">Say No to Single-Use Plastic</text>
+                <text x="24" y="66" font-family="Nunito Sans, sans-serif" font-size="13" fill="var(--on-surface-variant)">Reduce · Reuse · Recycle — Refill stations &amp; reusable bottles protect rivers.</text>
+              </g>
+            </svg>
+            <div class="feedback-box is-water">
+              <strong>Classroom Prompt:</strong> Say it together: <em>"Say No to Single-Use Plastic — Reduce, Reuse, Recycle!"</em>
+            </div>
+          </div>
+
+          <!-- B. Warm-up Questions -->
+          <div class="card">
+            <span class="mono-label">Warm-Up Discussion · Diagnostic Check</span>
+            <h3>Answer Before You Read</h3>
+
+            <div class="field-group">
+              <label class="field-label" for="warmup-q1">1. What can you see in this picture?</label>
+              <div class="chip-row">
+                <button type="button" class="choice-chip" onclick="selectWarmupChip('q1', 'Plastic bottles, cups, and bags floating in the river', this)">Plastic bottles &amp; bags in water</button>
+                <button type="button" class="choice-chip" onclick="selectWarmupChip('q1', 'Water pollution caused by single-use plastic waste', this)">Water pollution from plastic waste</button>
+              </div>
+              <input class="field-input" type="text" id="warmup-q1" placeholder="Type your observation or choose an option above..." oninput="saveWarmupInput('q1', this.value)">
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="warmup-q2">2. Do you often use single-use plastic at school?</label>
+              <div class="chip-row">
+                <button type="button" class="choice-chip" onclick="selectWarmupChip('q2', 'Yes, especially snack wrappers and bottled drinks.', this)">Yes, daily at the canteen</button>
+                <button type="button" class="choice-chip" onclick="selectWarmupChip('q2', 'Sometimes, though I try to bring my own bottle.', this)">Sometimes</button>
+                <button type="button" class="choice-chip" onclick="selectWarmupChip('q2', 'Rarely, because I bring a reusable bottle.', this)">Rarely — I bring a reusable bottle</button>
+              </div>
+              <input class="field-input" type="text" id="warmup-q2" placeholder="Describe your habit at school..." oninput="saveWarmupInput('q2', this.value)">
+            </div>
+
+            <div class="field-group">
+              <span class="field-label">3. Is plastic waste good for the environment?</span>
+              <div class="chip-row">
+                <button type="button" class="choice-chip" id="q3-no" onclick="selectWarmupChoice('q3', 'No, it harms nature and wildlife.', this)">No, it harms the environment</button>
+                <button type="button" class="choice-chip" id="q3-yes" onclick="selectWarmupChoice('q3', 'Yes, it is harmless.', this)">Yes, it is harmless</button>
+              </div>
+              <div id="warmup-q3-feedback" style="font-size: 0.9rem; color: var(--on-surface-variant);"></div>
+            </div>
+
+            <div class="field-group">
+              <span class="field-label">4. Should we reduce single-use plastic?</span>
+              <div class="chip-row">
+                <button type="button" class="choice-chip" id="q4-yes" onclick="selectWarmupChoice('q4', 'Yes, we should reduce single-use plastic.', this)">Yes, we should reduce it</button>
+                <button type="button" class="choice-chip" id="q4-no" onclick="selectWarmupChoice('q4', 'No, there is no need to reduce it.', this)">No, keep using it</button>
+              </div>
+              <div id="warmup-q4-feedback" style="font-size: 0.9rem; color: var(--on-surface-variant);"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C. Learning Objectives Preview -->
+        <div class="card is-leaf-highlight">
+          <span class="mono-label" style="color: var(--on-primary-container);">What You Will Learn Today</span>
+          <h3>Four Core Learning Objectives</h3>
+          <div class="card-grid">
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="tag tag-leaf">Objective 1</span>
+              <p>Identify the communicative purpose, generic structure (<strong>Thesis, Arguments, Reiteration</strong>), and key ideas in an analytical exposition.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="tag tag-leaf">Objective 2</span>
+              <p>Find <strong>explicit information</strong> and understand contextual meaning by applying targeted reading strategies.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="tag tag-leaf">Objective 3</span>
+              <p>Make logical <strong>inferences</strong> from both explicit and implicit clues within an analytical exposition text.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="tag tag-leaf">Objective 4</span>
+              <p>Answer <strong>TKA-oriented reading questions</strong>, evaluate the writer's arguments, and explain your answers using <strong>textual evidence</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-nav-footer">
+          <button type="button" class="btn btn-secondary" onclick="goToStep(0)">&larr; Back to Overview</button>
+          <button type="button" class="btn btn-primary" onclick="goToStep(2)">Continue to BKOF (Vocabulary &amp; Strategies) &rarr;</button>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- STEP 2: BKOF - BUILDING KNOWLEDGE OF THE FIELD (10 MIN) -->
+      <!-- ========================================================= -->
+      <section class="step-page" id="step-2" aria-labelledby="title-step-2">
+        <div class="page-intro">
+          <span class="kicker">Stage 1 · BKOF · Building Knowledge of the Field (10 Minutes)</span>
+          <h2 id="title-step-2">Key Vocabulary, Audio Pronunciation &amp; Reading Strategies</h2>
+          <p>
+            Click any vocabulary card below to hear its English pronunciation (Text-to-Speech) and reveal its meaning and example sentence. Then test yourself with the matching activity and learn the four-step reading strategy.
+          </p>
+        </div>
+
+        <!-- A. Vocabulary Audio Cards -->
+        <div class="card">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-md);">
+            <div>
+              <span class="mono-label">Part A · 11 Essential Vocabulary Terms</span>
+              <h3>Click a Card to Hear Pronunciation &amp; Reveal Meaning</h3>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm);">
+              <button type="button" class="btn btn-secondary btn-sm" id="btn-speech-rate" onclick="toggleSpeechRate()">
+                Speech Speed: Normal (1.0x)
+              </button>
+              <button type="button" class="btn btn-tertiary btn-sm" onclick="revealAllVocab()">
+                Reveal All Cards
+              </button>
+            </div>
+          </div>
+          <div id="speech-status-bar" class="mono-label" style="color: var(--primary);" aria-live="polite">
+            Audio Ready · Click any word card to pronounce it aloud.
+          </div>
+          <div class="vocab-grid" id="vocab-cards-grid"></div>
+        </div>
+
+        <!-- B. Interactive Vocabulary Matching (Lampiran 2 - All English) -->
+        <div class="card">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm);">
+            <div>
+              <span class="mono-label">Part B · Interactive Vocabulary Matching</span>
+              <h3>Match Each Word with Its English Definition</h3>
+            </div>
+            <span class="tag tag-ochre" id="match-score-badge">Score: 0 / 5</span>
+          </div>
+          <p>Select a word on the left, then click its matching definition on the right. When all five pairs are linked, click <strong>Check Answers</strong>.</p>
+          <div class="matching-board">
+            <div class="match-list" id="match-words-col"></div>
+            <div class="match-list" id="match-defs-col"></div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;">
+            <button type="button" class="btn btn-primary" onclick="checkMatchingAnswers()">Check Answers</button>
+            <button type="button" class="btn btn-secondary" onclick="resetMatchingActivity()">Retry Matching</button>
+          </div>
+          <div id="match-feedback" style="display: none;"></div>
+        </div>
+
+        <!-- C. Reading Strategies -->
+        <div class="card is-leaf-highlight">
+          <span class="mono-label" style="color: var(--on-primary-container);">Part C · Explicit Strategy Instruction</span>
+          <h3>The Four-Step Reading Strategy</h3>
+          <div class="card-grid">
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="tag tag-leaf">1. READ</span>
+              <p>Read the question carefully and identify exactly what information it asks for.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="tag tag-water">2. FIND</span>
+              <p>Scan the passage for keywords and locate the relevant sentence or paragraph.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="tag tag-ochre">3. THINK</span>
+              <p>Analyze the clues, connect ideas, and verify supporting evidence inside the text.</p>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <span class="tag tag-leaf">4. ANSWER</span>
+              <p>Select or write the clearest answer backed directly by textual evidence.</p>
+            </div>
+          </div>
+
+          <h4 style="padding-top: var(--space-sm);">Three TKA Reading Comprehension Skills</h4>
+          <div class="card-grid">
+            <div class="card-surface-deep" style="background: var(--background);">
+              <strong>1. Textual Understanding</strong>
+              <p style="font-size: 0.94rem;">Finding information stated directly (explicitly) in the passage.</p>
+              <span class="mono-label" style="color: var(--primary);">Spot keyword &rarr; Locate info &rarr; Pick answer</span>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <strong>2. Inferential Understanding</strong>
+              <p style="font-size: 0.94rem;">Drawing a logical conclusion from clues and ideas in the passage.</p>
+              <span class="mono-label" style="color: var(--water-deep);">Look for clues &rarr; Link ideas &rarr; Conclude</span>
+            </div>
+            <div class="card-surface-deep" style="background: var(--background);">
+              <strong>3. Evaluating with Evidence</strong>
+              <p style="font-size: 0.94rem;">Judging whether a claim is supported by facts in the text, not personal opinion.</p>
+              <span class="mono-label" style="color: var(--tertiary);">Read claim &rarr; Check text &rarr; Find proof</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-nav-footer">
+          <button type="button" class="btn btn-secondary" onclick="goToStep(1)">&larr; Back to Opening Activity</button>
+          <button type="button" class="btn btn-primary" onclick="goToStep(3)">Continue to MOT (Model Text &amp; Think-Aloud) &rarr;</button>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- STEP 3: MOT - MODELLING OF THE TEXT (15 MIN) -->
+      <!-- ========================================================= -->
+      <section class="step-page" id="step-3" aria-labelledby="title-step-3">
+        <div class="page-intro">
+          <span class="kicker">Stage 2 · MOT · Modelling of the Text (15 Minutes)</span>
+          <h2 id="title-step-3">Analytical Exposition Structure, Language &amp; Think-Aloud Model</h2>
+          <p>
+            Explore how an analytical exposition builds a persuasive argument, inspect the highlighted features inside the model passage, and step through the Teacher Think-Aloud demonstration.
+          </p>
+        </div>
+
+        <!-- A. Definition & Interactive Generic Structure -->
+        <div class="card">
+          <span class="mono-label">Part A · Genre Knowledge</span>
+          <h3>What Is an Analytical Exposition?</h3>
+          <p>
+            An <strong>analytical exposition</strong> is a text that presents the writer's argument about a topic in order to persuade the reader that something is the case or that something should be done.
+          </p>
+          <div class="structure-flow" id="structure-diagram">
+            <button type="button" class="structure-node is-active" onclick="selectStructureNode('thesis', this)">
+              <span class="tag tag-leaf">1. Thesis</span>
+              <strong>Introduces Topic &amp; Position</strong>
+              <span style="font-size: 0.9rem; color: var(--on-surface-variant);">Click to inspect role &amp; example</span>
+            </button>
+            <button type="button" class="structure-node" onclick="selectStructureNode('arguments', this)">
+              <span class="tag tag-water">2. Arguments</span>
+              <strong>Reasons &amp; Evidence</strong>
+              <span style="font-size: 0.9rem; color: var(--on-surface-variant);">Click to inspect role &amp; example</span>
+            </button>
+            <button type="button" class="structure-node" onclick="selectStructureNode('reiteration', this)">
+              <span class="tag tag-ochre">3. Reiteration</span>
+              <strong>Restates Position</strong>
+              <span style="font-size: 0.9rem; color: var(--on-surface-variant);">Click to inspect role &amp; example</span>
+            </button>
+          </div>
+          <div id="structure-detail-panel" class="feedback-box"></div>
+        </div>
+
+        <!-- B & C. Interactive Model Text & Feature Inspector -->
+        <div class="two-col-split">
+          <div class="passage-panel" id="mot-passage-panel">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm);">
+              <span class="mono-label">Model Text · Original Unaltered Passage</span>
+              <div style="display: flex; gap: var(--space-xs); flex-wrap: wrap;">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="togglePassageSize('mot-passage-panel')">Toggle Text Size</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="readPassageAloud('mot')">Listen Aloud</button>
+              </div>
+            </div>
+            <div class="passage-title">SCHOOLS SHOULD REDUCE SINGLE-USE PLASTIC</div>
+
+            <p class="passage-para" id="mot-p1" onclick="inspectMotParagraph('thesis')">
+              Single-use plastic <span class="lang-span" data-lang="present" onclick="inspectGrammar(event, 'present', 'has become')">has become</span> a part of daily life in many schools. Students <span class="lang-span" data-lang="present" onclick="inspectGrammar(event, 'present', 'buy / drink')">buy</span> snacks in plastic wrappers and drink from plastic bottles or cups every day. In my opinion, schools <span class="lang-span" data-lang="modal" onclick="inspectGrammar(event, 'modal', 'should')">should</span> <span class="lang-span" data-lang="vocab" onclick="inspectGrammar(event, 'vocab', 'reduce')">reduce</span> the use of single-use plastic because it <span class="lang-span" data-lang="present" onclick="inspectGrammar(event, 'present', 'harms')">harms</span> the <span class="lang-span" data-lang="vocab" onclick="inspectGrammar(event, 'vocab', 'environment')">environment</span> and creates <span class="lang-span" data-lang="evaluative" onclick="inspectGrammar(event, 'evaluative', 'unnecessary')">unnecessary</span> <span class="lang-span" data-lang="vocab" onclick="inspectGrammar(event, 'vocab', 'waste')">waste</span>.
+            </p>
+
+            <p class="passage-para" id="mot-p2" onclick="inspectMotParagraph('arguments1')">
+              <span class="lang-span" data-lang="connective" onclick="inspectGrammar(event, 'connective', 'Firstly')">Firstly</span>, single-use plastic <span class="lang-span" data-lang="present" onclick="inspectGrammar(event, 'present', 'needs')">needs</span> hundreds of years to <span class="lang-span" data-lang="vocab" onclick="inspectGrammar(event, 'vocab', 'decompose')">decompose</span>. Most of it is thrown away after only a few minutes of use, so the waste piles up quickly in landfills and rivers. <span class="lang-span" data-lang="connective" onclick="inspectGrammar(event, 'connective', 'As a result')">As a result</span>, the soil and water become <span class="lang-span" data-lang="evaluative" onclick="inspectGrammar(event, 'evaluative', 'polluted')">polluted</span>, and <span class="lang-span" data-lang="vocab" onclick="inspectGrammar(event, 'vocab', 'marine life')">marine life</span> is put in <span class="lang-span" data-lang="evaluative" onclick="inspectGrammar(event, 'evaluative', 'danger')">danger</span>.
+            </p>
+
+            <p class="passage-para" id="mot-p3" onclick="inspectMotParagraph('arguments2')">
+              <span class="lang-span" data-lang="connective" onclick="inspectGrammar(event, 'connective', 'Secondly')">Secondly</span>, reducing plastic <span class="lang-span" data-lang="modal" onclick="inspectGrammar(event, 'modal', 'can')">can</span> build <span class="lang-span" data-lang="evaluative" onclick="inspectGrammar(event, 'evaluative', 'good')">good</span> <span class="lang-span" data-lang="vocab" onclick="inspectGrammar(event, 'vocab', 'habits')">habits</span> among students. When schools provide refill stations and encourage students to bring <span class="lang-span" data-lang="vocab" onclick="inspectGrammar(event, 'vocab', 'reusable')">reusable</span> bottles, students learn to be <span class="lang-span" data-lang="evaluative" onclick="inspectGrammar(event, 'evaluative', 'responsible')">responsible</span> for their environment. <span class="lang-span" data-lang="connective" onclick="inspectGrammar(event, 'connective', 'In addition')">In addition</span>, they <span class="lang-span" data-lang="modal" onclick="inspectGrammar(event, 'modal', 'can')">can</span> save money because they do not have to buy bottled drinks every day.
+            </p>
+
+            <p class="passage-para" id="mot-p4" onclick="inspectMotParagraph('reiteration')">
+              <span class="lang-span" data-lang="connective" onclick="inspectGrammar(event, 'connective', 'In conclusion')">In conclusion</span>, schools <span class="lang-span" data-lang="modal" onclick="inspectGrammar(event, 'modal', 'should')">should</span> reduce single-use plastic. By choosing reusable items, students and teachers <span class="lang-span" data-lang="modal" onclick="inspectGrammar(event, 'modal', 'can')">can</span> keep the school clean and protect the environment for future generations.
+            </p>
+          </div>
+
+          <!-- Highlight Controls & Language Features Inspector -->
+          <div class="card">
+            <span class="mono-label">Interactive Text Analysis</span>
+            <h3>Highlight Structure &amp; Language</h3>
+            <p style="font-size: 0.94rem;">Toggle highlights below, then click any colored paragraph or word in the passage to inspect why it belongs to that feature.</p>
+
+            <div class="field-group">
+              <span class="field-label">Generic Structure Layers</span>
+              <div class="chip-row">
+                <button type="button" class="choice-chip" id="btn-hl-structure" onclick="toggleStructureHighlights()">Highlight Thesis / Arguments / Reiteration</button>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <span class="field-label">Language Features</span>
+              <div class="chip-row">
+                <button type="button" class="choice-chip" onclick="toggleLangHighlight('present', this)">Simple Present Tense</button>
+                <button type="button" class="choice-chip" onclick="toggleLangHighlight('modal', this)">Modals (should, can)</button>
+                <button type="button" class="choice-chip" onclick="toggleLangHighlight('connective', this)">Connectives</button>
+                <button type="button" class="choice-chip" onclick="toggleLangHighlight('evaluative', this)">Evaluative Words</button>
+                <button type="button" class="choice-chip" onclick="toggleLangHighlight('vocab', this)">Key Vocabulary</button>
+              </div>
+            </div>
+
+            <div id="mot-inspector-box" class="feedback-box">
+              <strong>Inspector Ready:</strong> Click a highlight filter above or click any paragraph in the passage to view an explanation.
+            </div>
+
+            <div class="card-surface-deep">
+              <span class="mono-label">Language Features Reference</span>
+              <ul style="margin: 0; padding-left: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-xs); font-size: 0.94rem;">
+                <li><strong>Simple Present Tense:</strong> States facts &amp; general truths (<em>Plastic waste harms marine life.</em>)</li>
+                <li><strong>Modals (should, must, can):</strong> Expresses recommendations &amp; necessity (<em>Schools should reduce single-use plastic.</em>)</li>
+                <li><strong>Connectives:</strong> Links arguments logically (<em>Firstly, secondly, in addition, therefore, in conclusion</em>)</li>
+                <li><strong>Evaluative Words:</strong> Signals the writer's attitude (<em>harmful, wasteful, important, necessary, responsible</em>)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- D. Teacher Think-Aloud Demonstration -->
+        <div class="card is-leaf-highlight">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm);">
+            <div>
+              <span class="mono-label" style="color: var(--on-primary-container);">Explicit Strategy Instruction · Think-Aloud Walkthrough</span>
+              <h3>Step-by-Step TKA Question Modelling</h3>
+            </div>
+            <div class="chip-row">
+              <button type="button" class="choice-chip is-selected" onclick="selectThinkAloudSkill(0, this)">1. Textual</button>
+              <button type="button" class="choice-chip" onclick="selectThinkAloudSkill(1, this)">2. Inferential</button>
+              <button type="button" class="choice-chip" onclick="selectThinkAloudSkill(2, this)">3. Evidence</button>
+            </div>
+          </div>
+
+          <div class="card-surface-deep" style="background: var(--background);" id="think-aloud-stage"></div>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm);">
+            <button type="button" class="btn btn-secondary btn-sm" id="ta-prev-btn" onclick="stepThinkAloud(-1)">&larr; Previous Step</button>
+            <span class="mono-label" id="ta-step-indicator">Step 1 of 4</span>
+            <button type="button" class="btn btn-primary btn-sm" id="ta-next-btn" onclick="stepThinkAloud(1)">Next Think-Aloud Step &rarr;</button>
+          </div>
+        </div>
+
+        <div class="step-nav-footer">
+          <button type="button" class="btn btn-secondary" onclick="goToStep(2)">&larr; Back to BKOF</button>
+          <button type="button" class="btn btn-primary" onclick="goToStep(4)">Continue to JCOT (Guided Practice) &rarr;</button>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- STEP 4: JCOT - JOINT CONSTRUCTION OF THE TEXT (15 MIN) -->
+      <!-- ========================================================= -->
+      <section class="step-page" id="step-4" aria-labelledby="title-step-4">
+        <div class="page-intro">
+          <span class="kicker">Stage 3 · JCOT · Joint Construction of the Text (15 Minutes)</span>
+          <h2 id="title-step-4">Collaborative Reading Comprehension Practice</h2>
+          <p>
+            Read the model passage carefully, discuss each question one at a time with your partner or group, identify supporting textual evidence, and check your answer before moving to the next question.
+          </p>
+        </div>
+
+        <div class="two-col-split">
+          <!-- Left: Model Passage Reference -->
+          <div class="passage-panel">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm);">
+              <span class="mono-label">Reference Passage</span>
+              <span class="tag tag-water" id="jcot-discussion-tag">Discussion Mode: Active</span>
+            </div>
+            <div class="passage-title">SCHOOLS SHOULD REDUCE SINGLE-USE PLASTIC</div>
+            <p class="passage-para" id="jcot-p1">
+              Single-use plastic has become a part of daily life in many schools. Students buy snacks in plastic wrappers and drink from plastic bottles or cups every day. In my opinion, schools should reduce the use of single-use plastic because it harms the environment and creates unnecessary waste.
+            </p>
+            <p class="passage-para" id="jcot-p2">
+              Firstly, single-use plastic needs hundreds of years to decompose. Most of it is thrown away after only a few minutes of use, so the waste piles up quickly in landfills and rivers. As a result, the soil and water become polluted, and marine life is put in danger.
+            </p>
+            <p class="passage-para" id="jcot-p3">
+              Secondly, reducing plastic can build good habits among students. When schools provide refill stations and encourage students to bring reusable bottles, students learn to be responsible for their environment. In addition, they can save money because they do not have to buy bottled drinks every day.
+            </p>
+            <p class="passage-para" id="jcot-p4">
+              In conclusion, schools should reduce single-use plastic. By choosing reusable items, students and teachers can keep the school clean and protect the environment for future generations.
+            </p>
+          </div>
+
+          <!-- Right: One Question at a Time Workspace -->
+          <div class="card">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm);">
+              <span class="tag tag-ochre" id="jcot-q-category">A. Textual Understanding</span>
+              <span class="mono-label" id="jcot-q-counter">Question 1 of 6</span>
+            </div>
+
+            <!-- Question Navigation Pills -->
+            <div class="chip-row" id="jcot-q-nav"></div>
+
+            <h3 id="jcot-q-text">Question text loads here</h3>
+
+            <!-- Dynamic Answer Input Area (Short Answer OR MCQ) -->
+            <div id="jcot-input-area"></div>
+
+            <!-- Textual Evidence Space -->
+            <div class="field-group">
+              <label class="field-label" for="jcot-evidence-input">Supporting Evidence from the Text (Quote or Paraphrase)</label>
+              <input class="field-input" type="text" id="jcot-evidence-input" placeholder="Copy or type the sentence from the passage that supports your answer..." oninput="saveJcotEvidence(this.value)">
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;">
+              <button type="button" class="btn btn-primary" onclick="checkJcotCurrent()">Check Answer</button>
+              <button type="button" class="btn btn-secondary" onclick="prevJcotQuestion()">&larr; Prev Question</button>
+              <button type="button" class="btn btn-secondary" onclick="nextJcotQuestion()">Next Question &rarr;</button>
+            </div>
+
+            <div id="jcot-feedback-area"></div>
+
+            <!-- Summary Tally -->
+            <div class="card-surface-deep">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm);">
+                <span class="mono-label">JCOT Group Practice Score</span>
+                <strong id="jcot-score-summary">0 / 6 Checked Correctly</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Performance Practice: Explain Your Answer -->
+        <div class="card is-leaf-highlight">
+          <span class="mono-label" style="color: var(--on-primary-container);">Performance Practice · Explain Your Answer</span>
+          <h3>Oral or Written Justification Pattern</h3>
+          <p>Choose any question from JCOT above and explain your answer using the required sentence frame: <strong>"My answer is … because the text says …"</strong></p>
+          <div class="field-group">
+            <label class="field-label" for="explain-answer-box">Your Explanation Sentence</label>
+            <textarea class="field-textarea" id="explain-answer-box" placeholder="My answer is ... because the text says ..." oninput="saveExplainAnswer(this.value)"></textarea>
+          </div>
+          <div id="explain-answer-status" class="mono-label" style="color: var(--on-primary-container);"></div>
+        </div>
+
+        <div class="step-nav-footer">
+          <button type="button" class="btn btn-secondary" onclick="goToStep(3)">&larr; Back to MOT</button>
+          <button type="button" class="btn btn-primary" onclick="goToStep(5)">Continue to ICOT (Independent Assessment) &rarr;</button>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- STEP 5: ICOT - INDEPENDENT CONSTRUCTION OF THE TEXT (20 MIN) -->
+      <!-- ========================================================= -->
+      <section class="step-page" id="step-5" aria-labelledby="title-step-5">
+        <div class="page-intro">
+          <span class="kicker">Stage 4 · ICOT · Independent Construction of the Text (20 Minutes)</span>
+          <h2 id="title-step-5">Independent Reading Comprehension Assessment</h2>
+          <p>
+            Read the new analytical exposition passage carefully on your own. Answer all three TKA-oriented questions using information and evidence from the text. Answers and explanations will appear only after you submit.
+          </p>
+        </div>
+
+        <div class="two-col-split">
+          <!-- Independent Passage (Verbatim) -->
+          <div class="passage-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm);">
+              <span class="mono-label">Independent Text · Original Passage</span>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="readPassageAloud('icot')">Listen Aloud</button>
+            </div>
+            <div class="passage-title">SCHOOLS SHOULD PROVIDE WASTE SORTING BINS</div>
+            <p class="passage-para">
+              Schools should provide separate bins for organic waste, paper, and plastic. Firstly, sorting waste makes recycling much easier. When paper and plastic are collected separately, they can be reused and turned into new products instead of ending up in the landfill.
+            </p>
+            <p class="passage-para">
+              Secondly, separate bins teach students to care about their surroundings. Students who sort their waste every day will develop a habit of responsibility that they bring into their families and communities. Therefore, schools should provide waste sorting bins to keep the environment clean and to educate the young generation.
+            </p>
+          </div>
+
+          <!-- Independent Test Area -->
+          <div class="card" id="icot-test-card">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm);">
+              <span class="tag tag-water" id="icot-q-skill">Question 1 · Textual Understanding</span>
+              <span class="mono-label" id="icot-q-counter">1 of 3</span>
+            </div>
+
+            <div class="chip-row" id="icot-q-nav"></div>
+
+            <h3 id="icot-q-prompt">Question loads here</h3>
+            <div class="mcq-list" id="icot-options-list"></div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-sm); padding-top: var(--space-sm);">
+              <div style="display: flex; gap: var(--space-sm);">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="prevIcotQuestion()">&larr; Prev</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="nextIcotQuestion()">Next &rarr;</button>
+              </div>
+              <button type="button" class="btn btn-primary" id="btn-submit-icot" onclick="submitIcotTest()">Submit Answers</button>
+            </div>
+            <div id="icot-validation-msg" style="font-size: 0.92rem; color: var(--error); font-weight: 700;"></div>
+          </div>
+        </div>
+
+        <!-- ICOT Results & Product Assessment Scoring (Hidden until submitted) -->
+        <div class="card is-leaf-highlight" id="icot-results-panel" style="display: none;">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-md);">
+            <div>
+              <span class="mono-label" style="color: var(--on-primary-container);">Product Assessment Result</span>
+              <h3 id="icot-score-headline">Score: 0 / 9 (0%)</h3>
+            </div>
+            <span class="tag tag-ochre" id="icot-mastery-badge">Mastery Status</span>
+          </div>
+          <p id="icot-score-formula-note"></p>
+          <div id="icot-review-list" style="display: flex; flex-direction: column; gap: var(--space-md);"></div>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm);">
+            <button type="button" class="btn btn-secondary" onclick="retakeIcotTest()">Retake Assessment</button>
+            <button type="button" class="btn btn-primary" id="btn-icot-next-path" onclick="goToStep(7)">Open Recommended Practice &rarr;</button>
+          </div>
+        </div>
+
+        <div class="step-nav-footer">
+          <button type="button" class="btn btn-secondary" onclick="goToStep(4)">&larr; Back to JCOT</button>
+          <button type="button" class="btn btn-primary" onclick="goToStep(6)">Continue to Summary &amp; Reflection &rarr;</button>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- STEP 6: CLOSING - SUMMARY, KNOWLEDGE CHECK & REFLECTION (15 MIN) -->
+      <!-- ========================================================= -->
+      <section class="step-page" id="step-6" aria-labelledby="title-step-6">
+        <div class="page-intro">
+          <span class="kicker">Closing Activities · 15 Minutes · Consolidation &amp; Reflection</span>
+          <h2 id="title-step-6">Lesson Summary &amp; Student Reflection</h2>
+          <p>
+            Review the core concepts from today's lesson, complete the quick knowledge check, and record your personal learning reflection.
+          </p>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="card-grid">
+          <div class="card">
+            <span class="tag tag-leaf">1. Purpose</span>
+            <h3>Persuasive Arguments</h3>
+            <p>An analytical exposition presents the writer's arguments to persuade readers that an issue is important or that an action should be taken.</p>
+          </div>
+          <div class="card">
+            <span class="tag tag-water">2. Generic Structure</span>
+            <h3>Thesis &rarr; Arguments &rarr; Reiteration</h3>
+            <p>Opens with the writer's position (Thesis), supports it with reasons and evidence (Arguments), and restates the claim (Reiteration).</p>
+          </div>
+          <div class="card">
+            <span class="tag tag-ochre">3. Language Features</span>
+            <h3>Grammar &amp; Vocabulary</h3>
+            <p>Uses Simple Present Tense, modals (<em>should, must, can</em>), logical connectives (<em>firstly, therefore</em>), and evaluative words (<em>harmful, responsible</em>).</p>
+          </div>
+          <div class="card is-leaf-highlight">
+            <span class="tag tag-leaf">4. Reading Proof</span>
+            <h3>Evidence-Based Answers</h3>
+            <p>Strong readers find explicit facts, make inferences from clues, and always support answers with exact evidence from the passage.</p>
+          </div>
+        </div>
+
+        <!-- Short Knowledge Check -->
+        <div class="card">
+          <span class="mono-label">Quick Knowledge Check</span>
+          <h3>Verify Your Key Takeaways</h3>
+          <div id="summary-quiz-container" style="display: flex; flex-direction: column; gap: var(--space-md);"></div>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;">
+            <button type="button" class="btn btn-primary" onclick="checkSummaryQuiz()">Check Takeaways</button>
+            <span id="summary-quiz-score" class="mono-label"></span>
+          </div>
+        </div>
+
+        <!-- Student Reflection (5 Original Questions) -->
+        <div class="card">
+          <span class="mono-label">Student Reflection · Self-Evaluation</span>
+          <h3>Reflect on Your Learning Today</h3>
+          <div class="field-group">
+            <label class="field-label" for="ref-q1">1. What did you learn today?</label>
+            <textarea class="field-textarea" id="ref-q1" placeholder="Write the main ideas or skills you learned..." oninput="saveReflection('r1', this.value)"></textarea>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="ref-q2">2. Can you find information in an analytical exposition?</label>
+            <textarea class="field-textarea" id="ref-q2" placeholder="Explain how confident you feel locating explicit facts..." oninput="saveReflection('r2', this.value)"></textarea>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="ref-q3">3. Can you draw a simple conclusion and identify the writer's arguments?</label>
+            <textarea class="field-textarea" id="ref-q3" placeholder="Share how you identify arguments and make inferences..." oninput="saveReflection('r3', this.value)"></textarea>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="ref-q4">4. What was difficult for you today?</label>
+            <textarea class="field-textarea" id="ref-q4" placeholder="Note any vocabulary, question types, or parts you found challenging..." oninput="saveReflection('r4', this.value)"></textarea>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="ref-q5">5. What will you do to improve your reading skills?</label>
+            <textarea class="field-textarea" id="ref-q5" placeholder="Describe your next step for practicing English reading..." oninput="saveReflection('r5', this.value)"></textarea>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;">
+            <button type="button" class="btn btn-primary" onclick="submitReflectionForm()">Submit Reflection</button>
+            <span id="reflection-submit-status" class="mono-label" style="color: var(--primary);"></span>
+          </div>
+        </div>
+
+        <div class="step-nav-footer">
+          <button type="button" class="btn btn-secondary" onclick="goToStep(5)">&larr; Back to ICOT</button>
+          <button type="button" class="btn btn-primary" onclick="goToStep(7)">Continue to Differentiated Toolkit &amp; Glossary &rarr;</button>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- STEP 7: DIFFERENTIATED TOOLKIT, EXTENSIONS, RUBRICS & GLOSSARY -->
+      <!-- ========================================================= -->
+      <section class="step-page" id="step-7" aria-labelledby="title-step-7">
+        <div class="page-intro">
+          <span class="kicker">Support, Extensions, Assessment &amp; Reference</span>
+          <h2 id="title-step-7">Differentiated Learning Toolkit &amp; Glossary</h2>
+          <p>
+            Access the Reading Strategy Card, Remedial or Enrichment extensions based on your ICOT score (Mastery Threshold: 76), the Interactive Glossary, Performance Rubrics, and the Teacher Guide.
+          </p>
+        </div>
+
+        <div class="subtab-bar" role="tablist" aria-label="Toolkit sections">
+          <button type="button" class="subtab-btn is-active" onclick="switchToolkitTab('strategy', this)">Strategy Card</button>
+          <button type="button" class="subtab-btn" onclick="switchToolkitTab('remedial', this)">Remedial Practice</button>
+          <button type="button" class="subtab-btn" onclick="switchToolkitTab('enrichment', this)">Enrichment &amp; Challenge</button>
+          <button type="button" class="subtab-btn" onclick="switchToolkitTab('rubrics', this)">Assessment &amp; Rubrics</button>
+          <button type="button" class="subtab-btn" onclick="switchToolkitTab('glossary', this)">Interactive Glossary</button>
+          <button type="button" class="subtab-btn" onclick="switchToolkitTab('teacher', this)">Teacher Panel</button>
+        </div>
+
+        <!-- TAB 1: READING STRATEGY CARD -->
+        <div class="subtab-panel is-active" id="tab-strategy">
+          <div class="card is-leaf-highlight">
+            <span class="mono-label" style="color: var(--on-primary-container);">Support for Learners · Reading Strategy Card</span>
+            <h3>READ &rarr; FIND &rarr; THINK &rarr; ANSWER</h3>
+            <div class="card-grid">
+              <div class="card-surface-deep" style="background: var(--background);">
+                <span class="tag tag-leaf">Step 1 · READ</span>
+                <p>Underline what the question asks (e.g., <em>how long, what, why, which statement</em>).</p>
+              </div>
+              <div class="card-surface-deep" style="background: var(--background);">
+                <span class="tag tag-water">Step 2 · FIND</span>
+                <p>Match the keyword in the question to the matching sentence in the paragraph.</p>
+              </div>
+              <div class="card-surface-deep" style="background: var(--background);">
+                <span class="tag tag-ochre">Step 3 · THINK</span>
+                <p>For direct facts, copy the detail. For inference, connect two clues together.</p>
+              </div>
+              <div class="card-surface-deep" style="background: var(--background);">
+                <span class="tag tag-leaf">Step 4 · ANSWER</span>
+                <p>Check your choice against the exact words in the text: <em>"My answer is … because the text says …"</em></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Quick Hints for Each Question Type</h3>
+            <ul style="margin: 0; padding-left: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm);">
+              <li><strong>Textual Understanding:</strong> Look for exact time, object, or action words (<em>Spot keyword &rarr; Locate info &rarr; Pick answer</em>).</li>
+              <li><strong>Inferential Understanding:</strong> Ask yourself: <em>"Why did the writer mention this detail?"</em> (<em>Look for clues &rarr; Link ideas &rarr; Draw conclusion</em>).</li>
+              <li><strong>Evaluating with Evidence:</strong> Eliminate options that contradict the text or add facts not mentioned in the passage.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TAB 2: REMEDIAL PRACTICE -->
+        <div class="subtab-panel" id="tab-remedial">
+          <div class="card">
+            <span class="tag tag-ochre">Optional Remedial Extension · For Scores Below 76</span>
+            <h3>Shorter Passage Practice: Bring Your Own Bottle to School</h3>
+            <div class="passage-panel">
+              <div class="passage-title">STUDENTS SHOULD BRING REUSABLE BOTTLES</div>
+              <p class="passage-para">
+                Students should bring reusable water bottles to school every day. Firstly, reusable bottles reduce plastic bottle waste in school bins. Secondly, students can refill their bottles at school fountains and save money. Therefore, bringing a reusable bottle is an easy way to keep our school clean.
+              </p>
+            </div>
+            <div id="remedial-questions-box" style="display: flex; flex-direction: column; gap: var(--space-md);"></div>
+            <div style="display: flex; gap: var(--space-sm); align-items: center; flex-wrap: wrap;">
+              <button type="button" class="btn btn-primary" onclick="checkRemedialAnswers()">Check Remedial Answers</button>
+              <span id="remedial-score-msg" class="mono-label"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: ENRICHMENT & HIGH-ACHIEVING CHALLENGE -->
+        <div class="subtab-panel" id="tab-enrichment">
+          <div class="card">
+            <span class="tag tag-leaf">Optional Enrichment Extension · For Scores 76 and Above</span>
+            <h3>Advanced Passage: Banning Single-Use Plastic Utensils in School Cafeterias</h3>
+            <div class="passage-panel">
+              <div class="passage-title">SCHOOL CAFETERIAS SHOULD PHASE OUT PLASTIC UTENSILS</div>
+              <p class="passage-para">
+                Every lunch period, school cafeterias distribute hundreds of disposable plastic forks, spoons, and straws that are discarded within twenty minutes. Although single-use utensils appear convenient, schools should phase them out because their long-term environmental cost far outweighs their brief convenience.
+              </p>
+              <p class="passage-para">
+                First, lightweight plastic utensils rarely get recycled. Because they are small and often contaminated with food, sorting machines cannot process them efficiently, sending them straight to landfills or waterways where they fragment into microplastics. Second, transitioning to washable metal cutlery or bamboo alternatives encourages mindful consumption. When schools invest in durable dishware and washing stations, students witness sustainability in daily practice rather than only reading about it in textbooks.
+              </p>
+              <p class="passage-para">
+                In conclusion, phasing out disposable cafeteria plastics is both practical and educational. By replacing throwaway utensils with durable options, schools lower waste volumes and model responsible citizenship.
+              </p>
+            </div>
+            <div id="enrichment-questions-box" style="display: flex; flex-direction: column; gap: var(--space-md);"></div>
+            <div style="display: flex; gap: var(--space-sm); align-items: center; flex-wrap: wrap;">
+              <button type="button" class="btn btn-primary" onclick="checkEnrichmentAnswers()">Check Enrichment Answers</button>
+              <span id="enrichment-score-msg" class="mono-label"></span>
+            </div>
+          </div>
+
+          <!-- High-Achiever Challenge: Create Your Own TKA Question -->
+          <div class="card is-leaf-highlight">
+            <span class="mono-label" style="color: var(--on-primary-container);">High-Achiever Challenge</span>
+            <h3>Design Your Own TKA-Oriented Question</h3>
+            <p>Write an inferential or evidence-evaluation question based on the enrichment passage above, and cite the exact supporting sentence.</p>
+            <div class="field-group">
+              <label class="field-label" for="custom-tka-type">Question Focus</label>
+              <select class="field-input" id="custom-tka-type">
+                <option value="Inferential Understanding">Inferential Understanding</option>
+                <option value="Evaluating Information Based on Evidence">Evaluating Information Based on Evidence</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="custom-tka-question">Your TKA Question</label>
+              <textarea class="field-textarea" id="custom-tka-question" placeholder="e.g., What can we infer about why lightweight plastic utensils often become microplastics?"></textarea>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="custom-tka-evidence">Supporting Textual Evidence &amp; Model Answer</label>
+              <textarea class="field-textarea" id="custom-tka-evidence" placeholder="Quote the sentence from the passage and explain the correct answer..."></textarea>
+            </div>
+            <div style="display: flex; gap: var(--space-sm); align-items: center; flex-wrap: wrap;">
+              <button type="button" class="btn btn-primary" onclick="saveCustomTkaChallenge()">Save Challenge Question</button>
+              <span id="custom-tka-status" class="mono-label"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: ASSESSMENT OVERVIEW & RUBRICS -->
+        <div class="subtab-panel" id="tab-rubrics">
+          <div class="card">
+            <span class="mono-label">Assessment Architecture</span>
+            <h3>Four Assessment Instruments in This Lesson</h3>
+            <div class="almanac-table-wrap">
+              <table class="almanac-table">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Technique</th>
+                    <th>Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Diagnostic</strong></td>
+                    <td>Warm-up activity &amp; oral questions</td>
+                    <td>Identify prior knowledge of plastic waste, basic vocabulary, and analytical exposition.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Formative</strong></td>
+                    <td>Observation &amp; JCOT practice on <em>Schools Should Reduce Single-Use Plastic</em></td>
+                    <td>Measure ability to find explicit facts, make inferences, and evaluate arguments with evidence.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Performance</strong></td>
+                    <td><em>Explain Your Answer</em> (oral or written)</td>
+                    <td>Justify answers using the frame: <em>"My answer is … because the text says …"</em></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Product</strong></td>
+                    <td>ICOT test on <em>Schools Should Provide Waste Sorting Bins</em></td>
+                    <td>Measure independent TKA-oriented reading comprehension (Max 9 pts; Mastery &ge; 76).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="mono-label">Performance Rubric · Explain Your Answer (Max 16 Points)</span>
+            <h3>Interactive Performance Score Calculator</h3>
+            <p>Formula: <code>Final Score = (Obtained Score &divide; 16) &times; 100</code></p>
+            <div class="almanac-table-wrap">
+              <table class="almanac-table">
+                <thead>
+                  <tr>
+                    <th>Aspect</th>
+                    <th>Score 4</th>
+                    <th>Score 3</th>
+                    <th>Score 2</th>
+                    <th>Score 1</th>
+                    <th>Select</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Answer Accuracy</strong></td>
+                    <td>Very accurate</td>
+                    <td>Accurate</td>
+                    <td>Less accurate</td>
+                    <td>Incorrect</td>
+                    <td>
+                      <label class="mono-label" for="rubric-acc" style="display:block; margin-bottom: var(--space-xs);">Score</label>
+                      <select class="field-input" id="rubric-acc" onchange="computePerformanceRubric()">
+                        <option value="4">4</option><option value="3" selected>3</option><option value="2">2</option><option value="1">1</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Textual Evidence</strong></td>
+                    <td>Highly relevant</td>
+                    <td>Relevant</td>
+                    <td>Less relevant</td>
+                    <td>No evidence</td>
+                    <td>
+                      <label class="mono-label" for="rubric-evi" style="display:block; margin-bottom: var(--space-xs);">Score</label>
+                      <select class="field-input" id="rubric-evi" onchange="computePerformanceRubric()">
+                        <option value="4">4</option><option value="3" selected>3</option><option value="2">2</option><option value="1">1</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Explanation</strong></td>
+                    <td>Very clear &amp; appropriate</td>
+                    <td>Clear &amp; appropriate</td>
+                    <td>Less clear</td>
+                    <td>No explanation</td>
+                    <td>
+                      <label class="mono-label" for="rubric-exp" style="display:block; margin-bottom: var(--space-xs);">Score</label>
+                      <select class="field-input" id="rubric-exp" onchange="computePerformanceRubric()">
+                        <option value="4">4</option><option value="3" selected>3</option><option value="2">2</option><option value="1">1</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Presentation</strong></td>
+                    <td>Very clear &amp; confident</td>
+                    <td>Clear</td>
+                    <td>Less clear</td>
+                    <td>Unclear</td>
+                    <td>
+                      <label class="mono-label" for="rubric-pre" style="display:block; margin-bottom: var(--space-xs);">Score</label>
+                      <select class="field-input" id="rubric-pre" onchange="computePerformanceRubric()">
+                        <option value="4">4</option><option value="3" selected>3</option><option value="2">2</option><option value="1">1</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="feedback-box" id="performance-rubric-result">
+              <strong>Calculated Performance Score:</strong> 12 / 16 = <strong>75.0%</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 5: INTERACTIVE GLOSSARY -->
+        <div class="subtab-panel" id="tab-glossary">
+          <div class="card">
+            <span class="mono-label">Core Terminology · Click Any Term to Expand &amp; Hear Audio</span>
+            <h3>Analytical Exposition &amp; Reading Strategy Glossary</h3>
+            <div class="vocab-grid" id="glossary-grid"></div>
+          </div>
+        </div>
+
+        <!-- TAB 6: TEACHER PANEL (SEPARATE TEACHER-ONLY SECTION) -->
+        <div class="subtab-panel" id="tab-teacher">
+          <div class="card">
+            <span class="tag tag-water">Teacher-Only Classroom Guide &amp; Reflection</span>
+            <h3>90-Minute Classroom Implementation Schedule</h3>
+            <div class="almanac-table-wrap">
+              <table class="almanac-table">
+                <thead>
+                  <tr>
+                    <th>Learning Stage</th>
+                    <th>Time Allocation</th>
+                    <th>Classroom Mode</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Opening Activities</td><td>15 minutes</td><td>Whole-class visual warm-up &amp; objectives</td></tr>
+                  <tr><td>BKOF (Building Knowledge of the Field)</td><td>10 minutes</td><td>Audio vocabulary &amp; reading strategy setup</td></tr>
+                  <tr><td>MOT (Modelling of the Text)</td><td>15 minutes</td><td>Genre analysis &amp; Teacher Think-Aloud</td></tr>
+                  <tr><td>JCOT (Joint Construction of the Text)</td><td>15 minutes</td><td>Collaborative group discussion &amp; evidence check</td></tr>
+                  <tr><td>ICOT (Independent Construction)</td><td>20 minutes</td><td>Quiet individual TKA comprehension test</td></tr>
+                  <tr><td>Closing Activities</td><td>15 minutes</td><td>Summary review, feedback &amp; student reflection</td></tr>
+                  <tr><td><strong>Total Lesson Duration</strong></td><td><strong>90 minutes</strong></td><td><strong>2 &times; 45 minutes (30 Students, Grade XI / Phase F)</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="mono-label">Teacher Reflection Log</span>
+            <h3>Post-Lesson Teacher Evaluation</h3>
+            <div class="field-group">
+              <label class="field-label" for="tref-1">1. Have students achieved the learning objectives?</label>
+              <textarea class="field-textarea" id="tref-1" placeholder="Record mastery notes..." oninput="saveTeacherRef('t1', this.value)"></textarea>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="tref-2">2. Which parts of the lesson worked well?</label>
+              <textarea class="field-textarea" id="tref-2" placeholder="Highlight effective activities..." oninput="saveTeacherRef('t2', this.value)"></textarea>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="tref-3">3. Were students able to understand explicit information, make inferences, and evaluate arguments?</label>
+              <textarea class="field-textarea" id="tref-3" placeholder="Evaluate student reading skills..." oninput="saveTeacherRef('t3', this.value)"></textarea>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="tref-4">4. What difficulties did students experience during the lesson?</label>
+              <textarea class="field-textarea" id="tref-4" placeholder="Note common obstacles..." oninput="saveTeacherRef('t4', this.value)"></textarea>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="tref-5">5. What should be improved in the next lesson?</label>
+              <textarea class="field-textarea" id="tref-5" placeholder="Action plan for next session..." oninput="saveTeacherRef('t5', this.value)"></textarea>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;">
+              <button type="button" class="btn btn-water" onclick="exportLessonReport()">Export Lesson &amp; Student Summary (.txt)</button>
+              <span id="teacher-export-status" class="mono-label"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-nav-footer">
+          <button type="button" class="btn btn-secondary" onclick="goToStep(6)">&larr; Back to Summary &amp; Reflection</button>
+          <button type="button" class="btn btn-primary" onclick="goToStep(0)">Return to Lesson Start</button>
+        </div>
+      </section>
+    </main>
+
+    <footer style="padding-top: var(--space-md); border-top: var(--border-soft); display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-sm);">
+      <span class="mono-label">Source Basis: Grade XI Analytical Exposition Teaching Module — Say No to Single-Use Plastic (Mohammad Rayhan, 2026/2027)</span>
+      <span class="mono-label">Phase F · Reading &amp; Viewing · TKA-Oriented Practice</span>
+    </footer>
+  </div>
+
+  <api-shim></api-shim>
+  <script>
+    /* =========================================================
+       DATA STORE (100% English, Backtick Template Literals)
+    ========================================================= */
+    const STEP_LABELS = [
+      `Step 1 of 8 · Overview`,
+      `Step 2 of 8 · Opening Activity (15m)`,
+      `Step 3 of 8 · BKOF (10m)`,
+      `Step 4 of 8 · MOT (15m)`,
+      `Step 5 of 8 · JCOT (15m)`,
+      `Step 6 of 8 · ICOT (20m)`,
+      `Step 7 of 8 · Summary & Reflection (15m)`,
+      `Step 8 of 8 · Toolkit & Glossary`
+    ];
+
+    const VOCAB_DATA = [
+      { word: `Environment`, phonetic: `/ɪnˈvaɪrənmənt/`, def: `The natural world of land, water, air, plants, and animals around us.`, ex: `Single-use plastic harms the environment.` },
+      { word: `Single-use`, phonetic: `/ˌsɪŋɡəl ˈjuːs/`, def: `Designed to be used once and then thrown away.`, ex: `Students often buy drinks in single-use plastic cups.` },
+      { word: `Waste`, phonetic: `/weɪst/`, def: `Unwanted or discarded materials that are no longer used.`, ex: `Plastic wrappers create unnecessary waste at school.` },
+      { word: `Pollution`, phonetic: `/pəˈluːʃən/`, def: `Harmful substances entering air, water, or soil and making them dirty.`, ex: `Plastic waste causes severe river pollution.` },
+      { word: `Harmful`, phonetic: `/ˈhɑːrmfəl/`, def: `Causing damage, injury, or danger to living things or nature.`, ex: `Plastic debris is harmful to sea turtles.` },
+      { word: `Reduce`, phonetic: `/rɪˈduːs/`, def: `To make smaller in amount or use less of something.`, ex: `Schools should reduce single-use plastic.` },
+      { word: `Reusable`, phonetic: `/riːˈjuːzəbəl/`, def: `Able to be used again multiple times instead of thrown away.`, ex: `Bring a reusable water bottle every day.` },
+      { word: `Marine life`, phonetic: `/məˈriːn laɪf/`, def: `Plants and animals that live in the ocean or sea.`, ex: `Polluted water puts marine life in danger.` },
+      { word: `Decompose`, phonetic: `/ˌdiːkəmˈpoʊz/`, def: `To break down naturally into smaller parts over time.`, ex: `Single-use plastic needs hundreds of years to decompose.` },
+      { word: `Habit`, phonetic: `/ˈhæbɪt/`, def: `A regular behavior or action that someone repeats often.`, ex: `Refilling bottles builds a responsible habit.` },
+      { word: `Therefore`, phonetic: `/ˈðɛərfɔːr/`, def: `For that reason; as a logical result (connective word).`, ex: `Plastic harms rivers; therefore, we should reduce it.` }
+    ];
+
+    const MATCHING_WORDS = [
+      { id: `waste`, word: `Waste`, def: `Unwanted material or rubbish that is thrown away.` },
+      { id: `pollution`, word: `Pollution`, def: `Contamination of water, soil, or air by harmful substances.` },
+      { id: `harmful`, word: `Harmful`, def: `Causing damage or danger to health or nature.` },
+      { id: `reduce`, word: `Reduce`, def: `To make smaller in amount or use less.` },
+      { id: `reusable`, word: `Reusable`, def: `Capable of being used again multiple times.` }
+    ];
+
+    const STRUCTURE_INFO = {
+      thesis: {
+        title: `1. Thesis — Introduces Topic & Writer's Position`,
+        body: `In Paragraph 1, the writer introduces daily single-use plastic use in schools and clearly states their position: "In my opinion, schools should reduce the use of single-use plastic because it harms the environment and creates unnecessary waste."`
+      },
+      arguments: {
+        title: `2. Arguments — Supporting Reasons & Evidence`,
+        body: `Paragraphs 2 and 3 present two structured arguments introduced by "Firstly" and "Secondly". Argument 1 focuses on environmental damage and slow decomposition; Argument 2 explains good student habits and saving money.`
+      },
+      reiteration: {
+        title: `3. Reiteration — Restates Position & Concludes`,
+        body: `In Paragraph 4 ("In conclusion..."), the writer reinforces the thesis ("schools should reduce single-use plastic") and summarizes the positive outcome for future generations.`
+      }
+    };
+
+    const THINK_ALOUD_DATA = [
+      {
+        skill: `Textual Understanding`,
+        question: `According to the text, how long does single-use plastic take to decompose?`,
+        steps: [
+          { label: `Step 1 · READ`, text: `Notice the question words "how long" (asking for a duration) and the keyword "decompose".` },
+          { label: `Step 2 · FIND`, text: `Scan Paragraph 2 for the word "decompose": "Firstly, single-use plastic needs hundreds of years to decompose."` },
+          { label: `Step 3 · THINK`, text: `Check what time duration sits right next to "needs ... to decompose". It states "hundreds of years" explicitly.` },
+          { label: `Step 4 · ANSWER`, text: `Correct Answer: "Hundreds of years." Direct textual evidence is in Paragraph 2, sentence 1.` }
+        ]
+      },
+      {
+        skill: `Inferential Understanding`,
+        question: `What can we infer about the writer's opinion on single-use plastic?`,
+        steps: [
+          { label: `Step 1 · READ`, text: `"What can we infer..." means we must combine clues rather than look for one single word.` },
+          { label: `Step 2 · FIND`, text: `Look at Paragraph 1 ("harms the environment"), Paragraph 2 ("landfills and rivers"), and Paragraph 4 ("protect the environment").` },
+          { label: `Step 3 · THINK`, text: `Connect the clues: the writer repeatedly highlights danger and waste, and urges schools to choose reusable items.` },
+          { label: `Step 4 · ANSWER`, text: `Inference: The writer strongly believes single-use plastic is harmful and wasteful, and schools should reduce its use.` }
+        ]
+      },
+      {
+        skill: `Evaluating Information Based on Evidence`,
+        question: `Which statement is best supported by the text?`,
+        steps: [
+          { label: `Step 1 · READ`, text: `Compare each candidate statement carefully against what the passage actually states.` },
+          { label: `Step 2 · FIND`, text: `Reject statements that contradict the passage (e.g., "decomposes in a few days" contradicts "hundreds of years").` },
+          { label: `Step 3 · THINK`, text: `Verify the supported claim word-for-word against Paragraph 1 or Paragraph 3.` },
+          { label: `Step 4 · ANSWER`, text: `Pick only the statement proven by a direct sentence in the text, never personal guesswork.` }
+        ]
+      }
+    ];
+
+    const JCOT_QUESTIONS = [
+      {
+        id: 1,
+        type: `open`,
+        category: `A. Textual Understanding`,
+        prompt: `Question 1: According to the text, how long does single-use plastic take to decompose?`,
+        keywords: [`hundred`, `hundreds of years`],
+        officialAnswer: `Hundreds of years.`,
+        evidence: `"Firstly, single-use plastic needs hundreds of years to decompose." (Paragraph 2)`,
+        explanation: `The duration is explicitly stated in the opening sentence of Paragraph 2.`
+      },
+      {
+        id: 2,
+        type: `open`,
+        category: `A. Textual Understanding`,
+        prompt: `Question 2: What can schools provide to help students avoid buying bottled drinks?`,
+        keywords: [`refill`, `station`, `water station`],
+        officialAnswer: `Refill stations (so students can bring reusable bottles).`,
+        evidence: `"When schools provide refill stations and encourage students to bring reusable bottles..." (Paragraph 3)`,
+        explanation: `Paragraph 3 directly names "refill stations" as the facility schools can provide.`
+      },
+      {
+        id: 3,
+        type: `open`,
+        category: `B. Inferential Understanding`,
+        prompt: `Question 3: What can we infer about the writer's opinion on single-use plastic?`,
+        keywords: [`harmful`, `reduce`, `bad`, `danger`, `waste`, `against`, `stop`],
+        officialAnswer: `The writer believes that single-use plastic is harmful and that schools should reduce its use.`,
+        evidence: `"In my opinion, schools should reduce the use of single-use plastic because it harms the environment and creates unnecessary waste." (Paragraph 1)`,
+        explanation: `Combining the thesis and both supporting paragraphs shows the writer views single-use plastic as harmful and urges schools to reduce it.`
+      },
+      {
+        id: 4,
+        type: `open`,
+        category: `B. Inferential Understanding`,
+        prompt: `Question 4: Why do you think the writer says that most single-use plastic is thrown away after only a few minutes of use?`,
+        keywords: [`wasteful`, `waste`, `short`, `long`, `imbalance`, `unnecessary`, `hundreds`, `pollut`],
+        officialAnswer: `To show that single-use plastic is wasteful, because it is used for only a short time but stays in the environment for a very long time.`,
+        evidence: `"Firstly, single-use plastic needs hundreds of years to decompose. Most of it is thrown away after only a few minutes of use..." (Paragraph 2)`,
+        explanation: `Contrasting "a few minutes of use" with "hundreds of years to decompose" emphasizes how wasteful single-use plastic is.`
+      },
+      {
+        id: 5,
+        type: `mcq`,
+        category: `C. Evaluating Information Based on Evidence`,
+        prompt: `Question 5: Which statement is best supported by the text?`,
+        options: [
+          { key: `A`, text: `Schools should reduce single-use plastic because it harms the environment.` },
+          { key: `B`, text: `Single-use plastic decomposes in a few days.` },
+          { key: `C`, text: `Plastic waste is not dangerous for marine life.` },
+          { key: `D`, text: `Students must buy bottled drinks every day.` }
+        ],
+        correct: `A`,
+        officialAnswer: `A. Schools should reduce single-use plastic because it harms the environment.`,
+        evidence: `"In my opinion, schools should reduce the use of single-use plastic because it harms the environment and creates unnecessary waste."`,
+        explanation: `Options B, C, and D directly contradict facts in the passage, while Option A matches the writer's thesis.`
+      },
+      {
+        id: 6,
+        type: `mcq`,
+        category: `C. Evaluating Information Based on Evidence`,
+        prompt: `Question 6: Which statement is supported by the information in the text?`,
+        options: [
+          { key: `A`, text: `Plastic waste is safe for marine life.` },
+          { key: `B`, text: `Reusable bottles can help students save money.` },
+          { key: `C`, text: `Single-use plastic decomposes in a few days.` },
+          { key: `D`, text: `Refill stations are useless at school.` }
+        ],
+        correct: `B`,
+        officialAnswer: `B. Reusable bottles can help students save money.`,
+        evidence: `"In addition, they can save money because they do not have to buy bottled drinks every day."`,
+        explanation: `Paragraph 3 explicitly states that bringing reusable bottles helps students save money.`
+      }
+    ];
+
+    const ICOT_QUESTIONS = [
+      {
+        id: 1,
+        skill: `Textual Understanding`,
+        prompt: `Question 1: What should schools provide, according to the text?`,
+        options: [
+          { key: `A`, text: `Plastic bags` },
+          { key: `B`, text: `Separate waste bins` },
+          { key: `C`, text: `Bottled drinks` },
+          { key: `D`, text: `Paper cups` }
+        ],
+        correct: `B`,
+        evidence: `"Schools should provide separate bins for organic waste, paper, and plastic."`,
+        explanation: `The first sentence directly states that schools should provide separate waste bins.`
+      },
+      {
+        id: 2,
+        skill: `Inferential Understanding`,
+        prompt: `Question 2: What can we infer about the writer's opinion?`,
+        options: [
+          { key: `A`, text: `Sorting waste is a useful habit for students.` },
+          { key: `B`, text: `Sorting waste is a waste of time.` },
+          { key: `C`, text: `Students should not care about rubbish.` },
+          { key: `D`, text: `Recycling is impossible.` }
+        ],
+        correct: `A`,
+        evidence: `"Students who sort their waste every day will develop a habit of responsibility that they bring into their families and communities."`,
+        explanation: `The writer explains that sorting waste builds responsibility and educates the young generation, proving the writer sees it as a useful habit.`
+      },
+      {
+        id: 3,
+        skill: `Evaluating Information Based on Evidence`,
+        prompt: `Question 3: Which statement is best supported by the text?`,
+        options: [
+          { key: `A`, text: `Schools should provide waste sorting bins to keep the environment clean.` },
+          { key: `B`, text: `Paper and plastic cannot be recycled.` },
+          { key: `C`, text: `Sorting waste makes the school yard dirtier.` },
+          { key: `D`, text: `Students cannot help protect the environment.` }
+        ],
+        correct: `A`,
+        evidence: `"Therefore, schools should provide waste sorting bins to keep the environment clean and to educate the young generation."`,
+        explanation: `The concluding reiteration sentence directly supports Option A, whereas B, C, and D contradict the passage.`
+      }
+    ];
+
+    const SUMMARY_QUIZ = [
+      {
+        id: `sq1`,
+        q: `Which three parts make up the generic structure of an analytical exposition?`,
+        options: [`Orientation, Complication, Resolution`, `Thesis, Arguments, Reiteration`, `Identification, Description, Conclusion`],
+        correct: 1
+      },
+      {
+        id: `sq2`,
+        q: `When answering an evidence-evaluation question, what must guide your choice?`,
+        options: [`Information and proof stated in the text`, `Personal guesses without reading`, `Only the title of the passage`],
+        correct: 0
+      },
+      {
+        id: `sq3`,
+        q: `Which tense is most commonly used to state general facts in an analytical exposition?`,
+        options: [`Simple Past Tense`, `Simple Present Tense`, `Future Continuous Tense`],
+        correct: 1
+      }
+    ];
+
+    const REMEDIAL_QUESTIONS = [
+      {
+        id: `rem1`,
+        q: `1. (Explicit) What should students bring to school every day?`,
+        options: [`Plastic cups`, `Reusable water bottles`, `Paper bags`],
+        correct: 1,
+        evidence: `"Students should bring reusable water bottles to school every day."`
+      },
+      {
+        id: `rem2`,
+        q: `2. (Inference) Why does the writer call bringing a reusable bottle an "easy way"?`,
+        options: [`Because school fountains are available and students also save money`, `Because water bottles are expensive`, `Because plastic bottles vanish overnight`],
+        correct: 0,
+        evidence: `"Firstly, reusable bottles reduce plastic bottle waste... Secondly, students can refill their bottles at school fountains and save money."`
+      },
+      {
+        id: `rem3`,
+        q: `3. (Evidence) Which statement matches the text?`,
+        options: [`Reusable bottles increase school bin waste.`, `Reusable bottles help reduce plastic waste and save money.`, `Schools do not have water fountains.`],
+        correct: 1,
+        evidence: `"reusable bottles reduce plastic bottle waste... and save money."`
+      }
+    ];
+
+    const ENRICHMENT_QUESTIONS = [
+      {
+        id: `enr1`,
+        q: `1. (Explicit) Why do sorting machines fail to recycle lightweight plastic utensils?`,
+        options: [`They are too heavy for the belt`, `They are small and often contaminated with food`, `They dissolve in cafeteria water`],
+        correct: 1,
+        evidence: `"Because they are small and often contaminated with food, sorting machines cannot process them efficiently..."`
+      },
+      {
+        id: `enr2`,
+        q: `2. (Complex Inference) What does the writer imply about textbook lessons on sustainability without real school action?`,
+        options: [`Reading alone is less effective than practicing sustainability daily in the cafeteria`, `Textbooks should be banned from schools`, `Students prefer disposable plastic over durable dishware`],
+        correct: 0,
+        evidence: `"...students witness sustainability in daily practice rather than only reading about it in textbooks."`
+      },
+      {
+        id: `enr3`,
+        q: `3. (Evidence Evaluation) Which conclusion is best supported by the passage?`,
+        options: [`Convenience for twenty minutes justifies long-term microplastic pollution.`, `Replacing throwaway utensils with durable alternatives reduces waste and teaches citizenship.`, `Bamboo alternatives cannot be used in cafeterias.`],
+        correct: 1,
+        evidence: `"By replacing throwaway utensils with durable options, schools lower waste volumes and model responsible citizenship."`
+      }
+    ];
+
+    const GLOSSARY_ITEMS = [
+      { term: `Analytical Exposition`, def: `A text containing the writer's arguments to convince readers that an opinion is correct or something should be done.` },
+      { term: `Thesis`, def: `The opening part introducing the topic and stating the writer's opinion or position.` },
+      { term: `Arguments`, def: `Supporting reasons, explanations, and evidence that strengthen the thesis.` },
+      { term: `Reiteration`, def: `The closing part that restates the writer's thesis and concludes the argument.` },
+      { term: `Explicit Information`, def: `Information directly stated in a text.` },
+      { term: `Inference`, def: `A logical conclusion drawn from clues or combined ideas in a text.` },
+      { term: `Evidence`, def: `Information or exact sentences from a text supporting an answer.` },
+      { term: `Reading Strategy`, def: `Purposeful steps (such as READ, FIND, THINK, ANSWER) used to understand a text.` },
+      { term: `TKA (Academic Ability Test)`, def: `An academic assessment measuring students' reading comprehension, reasoning, and analytical abilities.` }
+    ];
+
+    /* =========================================================
+       APPLICATION STATE (Persisted via notebookAppApi)
+    ========================================================= */
+    let appState = {
+      currentStep: 0,
+      visitedSteps: [0],
+      presentationMode: false,
+      speechRate: 1.0,
+      revealedVocab: [],
+      warmup: { q1: ``, q2: ``, q3: ``, q4: `` },
+      matchingPairs: {},
+      matchingChecked: false,
+      matchingScore: 0,
+      jcotIndex: 0,
+      jcotAnswers: {},
+      jcotEvidence: {},
+      jcotChecked: {},
+      explainAnswer: ``,
+      icotIndex: 0,
+      icotAnswers: {},
+      icotSubmitted: false,
+      summaryQuizAnswers: {},
+      summaryQuizChecked: false,
+      reflections: { r1: ``, r2: ``, r3: ``, r4: ``, r5: `` },
+      reflectionSubmitted: false,
+      remedialAnswers: {},
+      enrichmentAnswers: {},
+      customTka: { type: `Inferential Understanding`, question: ``, evidence: `` },
+      teacherReflections: { t1: ``, t2: ``, t3: ``, t4: ``, t5: `` }
+    };
+
+    let selectedMatchWord = null;
+    let structureHighlighted = false;
+    let activeLangFeatures = { present: false, modal: false, connective: false, evaluative: false, vocab: false };
+    let thinkAloudSkillIdx = 0;
+    let thinkAloudStepIdx = 0;
+    let shuffledDefsOrder = [];
+
+    /* =========================================================
+       PERSISTENCE HELPERS
+    ========================================================= */
+    async function persistState() {
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.setAppState === `function`) {
+          await window.notebookAppApi.setAppState(appState);
+        }
+      } catch (err) {
+        // Silent fallback if outside host
+      }
+      updateProgressIndicator();
+    }
+
+    function updateProgressIndicator() {
+      const visitedCount = Array.isArray(appState.visitedSteps) ? appState.visitedSteps.length : 1;
+      const pct = Math.min(100, Math.round((visitedCount / 8) * 100));
+      const badge = document.getElementById(`completion-badge`);
+      if (badge) badge.textContent = `${pct}% Explored`;
+      const bar = document.getElementById(`lesson-progress-bar`);
+      if (bar) bar.style.width = `${((appState.currentStep + 1) / 8) * 100}%`;
+    }
+
+    /* =========================================================
+       NAVIGATION (Page-by-Page Step Structure)
+    ========================================================= */
+    function goToStep(stepIdx) {
+      if (stepIdx < 0 || stepIdx > 7) return;
+      appState.currentStep = stepIdx;
+      if (!appState.visitedSteps.includes(stepIdx)) {
+        appState.visitedSteps.push(stepIdx);
+      }
+
+      for (let i = 0; i <= 7; i++) {
+        const sec = document.getElementById(`step-${i}`);
+        if (sec) {
+          if (i === stepIdx) sec.classList.add(`is-active`);
+          else sec.classList.remove(`is-active`);
+        }
+      }
+
+      const stepBtns = document.querySelectorAll(`.season-step-btn`);
+      stepBtns.forEach((btn) => {
+        const s = Number(btn.dataset.step);
+        btn.classList.remove(`is-peak`, `is-prep`);
+        if (s === stepIdx) {
+          btn.classList.add(`is-peak`);
+          btn.setAttribute(`aria-current`, `step`);
+        } else {
+          btn.removeAttribute(`aria-current`);
+          if (appState.visitedSteps.includes(s)) btn.classList.add(`is-prep`);
+        }
+      });
+
+      const counter = document.getElementById(`step-counter-label`);
+      if (counter) counter.textContent = STEP_LABELS[stepIdx];
+
+      window.scrollTo({ top: 0, behavior: `smooth` });
+      persistState();
+    }
+
+    function togglePresentationMode() {
+      appState.presentationMode = !appState.presentationMode;
+      applyPresentationMode();
+      persistState();
+    }
+
+    function applyPresentationMode() {
+      const btn = document.getElementById(`btn-teacher-mode`);
+      if (appState.presentationMode) {
+        document.body.classList.add(`presentation-mode`);
+        if (btn) btn.textContent = `Projector Mode: On`;
+      } else {
+        document.body.classList.remove(`presentation-mode`);
+        if (btn) btn.textContent = `Projector Mode: Off`;
+      }
+    }
+
+    function handleResetProgress(btn) {
+      if (!btn) return;
+      if (btn.dataset.armed !== `true`) {
+        btn.dataset.armed = `true`;
+        btn.textContent = `Click Again to Confirm Reset`;
+        setTimeout(() => {
+          if (btn.dataset.armed === `true`) {
+            btn.dataset.armed = `false`;
+            btn.textContent = `Reset Progress`;
+          }
+        }, 4000);
+        return;
+      }
+      btn.dataset.armed = `false`;
+      btn.textContent = `Reset Progress`;
+      appState = {
+        currentStep: 0,
+        visitedSteps: [0],
+        presentationMode: false,
+        speechRate: 1.0,
+        revealedVocab: [],
+        warmup: { q1: ``, q2: ``, q3: ``, q4: `` },
+        matchingPairs: {},
+        matchingChecked: false,
+        matchingScore: 0,
+        jcotIndex: 0,
+        jcotAnswers: {},
+        jcotEvidence: {},
+        jcotChecked: {},
+        explainAnswer: ``,
+        icotIndex: 0,
+        icotAnswers: {},
+        icotSubmitted: false,
+        summaryQuizAnswers: {},
+        summaryQuizChecked: false,
+        reflections: { r1: ``, r2: ``, r3: ``, r4: ``, r5: `` },
+        reflectionSubmitted: false,
+        remedialAnswers: {},
+        enrichmentAnswers: {},
+        customTka: { type: `Inferential Understanding`, question: ``, evidence: `` },
+        teacherReflections: { t1: ``, t2: ``, t3: ``, t4: ``, t5: `` }
+      };
+      restoreUI();
+      goToStep(0);
+      persistState();
+    }
+
+    /* =========================================================
+       AUDIO TEXT-TO-SPEECH (Vocab Cards & Passages)
+    ========================================================= */
+    function speakText(text, cardEl) {
+      const status = document.getElementById(`speech-status-bar`);
+      document.querySelectorAll(`.vocab-card.is-speaking`).forEach((c) => c.classList.remove(`is-speaking`));
+
+      if (cardEl) cardEl.classList.add(`is-speaking`);
+      if (status) status.textContent = `Speaking: "${text}" (${appState.speechRate === 1 ? `Normal` : `Slow`} speed)`;
+
+      try {
+        if (`speechSynthesis` in window) {
+          window.speechSynthesis.cancel();
+          const utter = new SpeechSynthesisUtterance(text);
+          utter.lang = `en-US`;
+          utter.rate = appState.speechRate;
+          const voices = window.speechSynthesis.getVoices();
+          const enVoice = voices.find((v) => v.lang && v.lang.toLowerCase().startsWith(`en`));
+          if (enVoice) utter.voice = enVoice;
+          utter.onend = () => {
+            if (cardEl) cardEl.classList.remove(`is-speaking`);
+            if (status) status.textContent = `Finished pronouncing "${text}". Click any card to listen again.`;
+          };
+          utter.onerror = () => {
+            if (cardEl) cardEl.classList.remove(`is-speaking`);
+          };
+          window.speechSynthesis.speak(utter);
+          setTimeout(() => {
+            if (cardEl) cardEl.classList.remove(`is-speaking`);
+          }, 4500);
+          return;
+        }
+      } catch (e) {
+        // Fallback below
+      }
+
+      // Web Audio gentle chime fallback if speechSynthesis unavailable
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (AudioCtx) {
+          const ctx = new AudioCtx();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = `sine`;
+          osc.frequency.setValueAtTime(523.25, ctx.currentTime);
+          gain.gain.setValueAtTime(0.08, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.25);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.25);
+        }
+      } catch (e2) {}
+      setTimeout(() => {
+        if (cardEl) cardEl.classList.remove(`is-speaking`);
+      }, 1200);
+    }
+
+    function toggleSpeechRate() {
+      appState.speechRate = appState.speechRate === 1.0 ? 0.72 : 1.0;
+      const btn = document.getElementById(`btn-speech-rate`);
+      if (btn) btn.textContent = appState.speechRate === 1.0 ? `Speech Speed: Normal (1.0x)` : `Speech Speed: Slow & Clear (0.72x)`;
+      persistState();
+    }
+
+    function readPassageAloud(which) {
+      let text = ``;
+      if (which === `mot`) {
+        text = `Schools Should Reduce Single-Use Plastic. Single-use plastic has become a part of daily life in many schools. Students buy snacks in plastic wrappers and drink from plastic bottles or cups every day. In my opinion, schools should reduce the use of single-use plastic because it harms the environment and creates unnecessary waste. Firstly, single-use plastic needs hundreds of years to decompose. Most of it is thrown away after only a few minutes of use, so the waste piles up quickly in landfills and rivers. As a result, the soil and water become polluted, and marine life is put in danger. Secondly, reducing plastic can build good habits among students. When schools provide refill stations and encourage students to bring reusable bottles, students learn to be responsible for their environment. In addition, they can save money because they do not have to buy bottled drinks every day. In conclusion, schools should reduce single-use plastic. By choosing reusable items, students and teachers can keep the school clean and protect the environment for future generations.`;
+      } else {
+        text = `Schools Should Provide Waste Sorting Bins. Schools should provide separate bins for organic waste, paper, and plastic. Firstly, sorting waste makes recycling much easier. When paper and plastic are collected separately, they can be reused and turned into new products instead of ending up in the landfill. Secondly, separate bins teach students to care about their surroundings. Students who sort their waste every day will develop a habit of responsibility that they bring into their families and communities. Therefore, schools should provide waste sorting bins to keep the environment clean and to educate the young generation.`;
+      }
+      speakText(text, null);
+    }
+
+    /* =========================================================
+       STEP 1: OPENING ACTIVITY HANDLERS
+    ========================================================= */
+    let cleanSceneVisible = false;
+    function toggleSceneComparison() {
+      cleanSceneVisible = !cleanSceneVisible;
+      const poll = document.getElementById(`svg-polluted-group`);
+      const clean = document.getElementById(`svg-clean-group`);
+      const lbl = document.getElementById(`scene-caption-label`);
+      const btn = document.getElementById(`btn-toggle-scene`);
+      if (poll && clean) {
+        poll.style.display = cleanSceneVisible ? `none` : `inline`;
+        clean.style.display = cleanSceneVisible ? `inline` : `none`;
+      }
+      if (lbl) lbl.textContent = cleanSceneVisible ? `Scene B · Clean Reusable Future` : `Scene A · Plastic Waste in Waterways`;
+      if (btn) btn.textContent = cleanSceneVisible ? `Switch to Polluted View` : `Switch to Clean Future View`;
+    }
+
+    function selectWarmupChip(key, value, btn) {
+      appState.warmup[key] = value;
+      const input = document.getElementById(`warmup-${key}`);
+      if (input) input.value = value;
+      if (btn && btn.parentElement) {
+        btn.parentElement.querySelectorAll(`.choice-chip`).forEach((c) => c.classList.remove(`is-selected`));
+        btn.classList.add(`is-selected`);
+      }
+      persistState();
+    }
+
+    function saveWarmupInput(key, value) {
+      appState.warmup[key] = value;
+      persistState();
+    }
+
+    function selectWarmupChoice(key, value, btn) {
+      appState.warmup[key] = value;
+      if (btn && btn.parentElement) {
+        btn.parentElement.querySelectorAll(`.choice-chip`).forEach((c) => c.classList.remove(`is-selected`));
+        btn.classList.add(`is-selected`);
+      }
+      const fb = document.getElementById(`warmup-${key}-feedback`);
+      if (fb) {
+        if (key === `q3`) {
+          fb.textContent = value.startsWith(`No`) ? `Spot on! Plastic waste pollutes soil, rivers, and endangers marine life.` : `Think again: plastic takes hundreds of years to decompose and harms ecosystems.`;
+        } else {
+          fb.textContent = value.startsWith(`Yes`) ? `Great! Reducing single-use plastic keeps schools clean and builds strong habits.` : `Consider the impact: reducing single-use plastic prevents waste from piling up.`;
+        }
+      }
+      persistState();
+    }
+
+    /* =========================================================
+       STEP 2: BKOF VOCABULARY CARDS & MATCHING
+    ========================================================= */
+    function renderVocabCards() {
+      const grid = document.getElementById(`vocab-cards-grid`);
+      if (!grid) return;
+      grid.innerHTML = VOCAB_DATA.map((item, idx) => {
+        const revealed = appState.revealedVocab.includes(item.word);
+        return `
+          <div class="vocab-card ${revealed ? `is-revealed` : ``}" role="button" tabindex="0" aria-expanded="${revealed}" onclick="clickVocabCard(${idx}, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();clickVocabCard(${idx}, this);}">
+            <div class="vocab-top">
+              <div>
+                <div class="vocab-word">${item.word}</div>
+                <div class="vocab-phonetic">${item.phonetic}</div>
+              </div>
+              <span class="audio-pill">&#128266; Listen</span>
+            </div>
+            <div class="vocab-detail">
+              <div><strong>Meaning:</strong> ${item.def}</div>
+              <div class="vocab-example">"${item.ex}"</div>
+              <div>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="event.stopPropagation(); speakVocabExample(${idx}, this)">
+                  Hear Example Sentence
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join(``);
+    }
+
+    function speakVocabExample(idx, btnEl) {
+      const item = VOCAB_DATA[idx];
+      if (!item) return;
+      speakText(item.ex, btnEl ? btnEl.closest(`.vocab-card`) : null);
+    }
+
+    function clickVocabCard(idx, cardEl) {
+      const item = VOCAB_DATA[idx];
+      if (!item) return;
+      if (!appState.revealedVocab.includes(item.word)) {
+        appState.revealedVocab.push(item.word);
+      }
+      if (cardEl) {
+        cardEl.classList.add(`is-revealed`);
+        cardEl.setAttribute(`aria-expanded`, `true`);
+      }
+      speakText(item.word, cardEl);
+      persistState();
+    }
+
+    function revealAllVocab() {
+      appState.revealedVocab = VOCAB_DATA.map((v) => v.word);
+      renderVocabCards();
+      persistState();
+    }
+
+    function initShuffledDefs() {
+      if (shuffledDefsOrder.length === 0) {
+        shuffledDefsOrder = [
+          MATCHING_WORDS[2],
+          MATCHING_WORDS[4],
+          MATCHING_WORDS[0],
+          MATCHING_WORDS[3],
+          MATCHING_WORDS[1]
+        ];
+      }
+    }
+
+    function renderMatchingBoard() {
+      initShuffledDefs();
+      const wordsCol = document.getElementById(`match-words-col`);
+      const defsCol = document.getElementById(`match-defs-col`);
+      if (!wordsCol || !defsCol) return;
+
+      wordsCol.innerHTML = MATCHING_WORDS.map((item, i) => {
+        const pairedId = appState.matchingPairs[item.id];
+        const isSel = selectedMatchWord === item.id;
+        let cls = `match-item`;
+        if (appState.matchingChecked) {
+          cls += pairedId === item.id ? ` is-correct` : ` is-wrong`;
+        } else if (isSel) {
+          cls += ` is-selected`;
+        } else if (pairedId) {
+          cls += ` is-paired`;
+        }
+        const badgeText = pairedId ? `Linked` : `Select`;
+        return `
+          <button type="button" class="${cls}" onclick="selectMatchWord('${item.id}')">
+            <span>${i + 1}. ${item.word}</span>
+            <span class="mono-label">${badgeText}</span>
+          </button>
+        `;
+      }).join(``);
+
+      defsCol.innerHTML = shuffledDefsOrder.map((defItem) => {
+        const pairedWordKey = Object.keys(appState.matchingPairs).find((k) => appState.matchingPairs[k] === defItem.id);
+        let cls = `match-item`;
+        if (appState.matchingChecked) {
+          cls += pairedWordKey === defItem.id ? ` is-correct` : ` is-wrong`;
+        } else if (pairedWordKey) {
+          cls += ` is-paired`;
+        }
+        const pairedWordObj = MATCHING_WORDS.find((w) => w.id === pairedWordKey);
+        return `
+          <button type="button" class="${cls}" onclick="selectMatchDef('${defItem.id}')">
+            <span>${defItem.def}</span>
+            ${pairedWordObj ? `<span class="tag tag-water">${pairedWordObj.word}</span>` : ``}
+          </button>
+        `;
+      }).join(``);
+
+      const scoreBadge = document.getElementById(`match-score-badge`);
+      if (scoreBadge) scoreBadge.textContent = `Score: ${appState.matchingScore} / 5`;
+    }
+
+    function selectMatchWord(wordId) {
+      if (appState.matchingChecked) return;
+      selectedMatchWord = selectedMatchWord === wordId ? null : wordId;
+      renderMatchingBoard();
+    }
+
+    function selectMatchDef(defId) {
+      if (appState.matchingChecked) return;
+      if (!selectedMatchWord) {
+        const fb = document.getElementById(`match-feedback`);
+        if (fb) {
+          fb.style.display = `block`;
+          fb.className = `feedback-box is-warning`;
+          fb.textContent = `Select a vocabulary word on the left first, then click its definition here.`;
+        }
+        return;
+      }
+      // Remove any existing link to this defId
+      Object.keys(appState.matchingPairs).forEach((k) => {
+        if (appState.matchingPairs[k] === defId) delete appState.matchingPairs[k];
+      });
+      appState.matchingPairs[selectedMatchWord] = defId;
+      selectedMatchWord = null;
+      const fb = document.getElementById(`match-feedback`);
+      if (fb) fb.style.display = `none`;
+      renderMatchingBoard();
+      persistState();
+    }
+
+    function checkMatchingAnswers() {
+      const pairedCount = Object.keys(appState.matchingPairs).length;
+      const fb = document.getElementById(`match-feedback`);
+      if (pairedCount < 5) {
+        if (fb) {
+          fb.style.display = `block`;
+          fb.className = `feedback-box is-warning`;
+          fb.textContent = `Please match all 5 vocabulary words before checking (${pairedCount}/5 matched).`;
+        }
+        return;
+      }
+      let score = 0;
+      MATCHING_WORDS.forEach((w) => {
+        if (appState.matchingPairs[w.id] === w.id) score++;
+      });
+      appState.matchingChecked = true;
+      appState.matchingScore = score;
+      renderMatchingBoard();
+      if (fb) {
+        fb.style.display = `block`;
+        fb.className = score === 5 ? `feedback-box` : `feedback-box is-warning`;
+        fb.innerHTML = score === 5
+          ? `<strong>Excellent! 5 / 5 Correct.</strong> All five words are matched accurately.`
+          : `<strong>You scored ${score} / 5.</strong> Review the red items, click <em>Retry Matching</em>, and verify each definition.`;
+      }
+      persistState();
+    }
+
+    function resetMatchingActivity() {
+      appState.matchingPairs = {};
+      appState.matchingChecked = false;
+      appState.matchingScore = 0;
+      selectedMatchWord = null;
+      const fb = document.getElementById(`match-feedback`);
+      if (fb) fb.style.display = `none`;
+      renderMatchingBoard();
+      persistState();
+    }
+
+    /* =========================================================
+       STEP 3: MOT (STRUCTURE, TEXT HIGHLIGHT, THINK-ALOUD)
+    ========================================================= */
+    function selectStructureNode(key, btn) {
+      document.querySelectorAll(`.structure-node`).forEach((n) => n.classList.remove(`is-active`));
+      if (btn) btn.classList.add(`is-active`);
+      const panel = document.getElementById(`structure-detail-panel`);
+      const info = STRUCTURE_INFO[key];
+      if (panel && info) {
+        panel.innerHTML = `<strong>${info.title}</strong><p>${info.body}</p>`;
+      }
+    }
+
+    function togglePassageSize(panelId) {
+      const p = document.getElementById(panelId);
+      if (p) p.classList.toggle(`font-large`);
+    }
+
+    function toggleStructureHighlights() {
+      structureHighlighted = !structureHighlighted;
+      const btn = document.getElementById(`btn-hl-structure`);
+      const p1 = document.getElementById(`mot-p1`);
+      const p2 = document.getElementById(`mot-p2`);
+      const p3 = document.getElementById(`mot-p3`);
+      const p4 = document.getElementById(`mot-p4`);
+
+      if (btn) btn.classList.toggle(`is-selected`, structureHighlighted);
+      if (p1) p1.classList.toggle(`hl-thesis`, structureHighlighted);
+      if (p2) p2.classList.toggle(`hl-arguments`, structureHighlighted);
+      if (p3) p3.classList.toggle(`hl-arguments`, structureHighlighted);
+      if (p4) p4.classList.toggle(`hl-reiteration`, structureHighlighted);
+
+      const box = document.getElementById(`mot-inspector-box`);
+      if (box) {
+        box.innerHTML = structureHighlighted
+          ? `<strong>Structure Highlights Active:</strong> Green = Thesis (Para 1) · Blue = Arguments (Para 2–3) · Ochre = Reiteration (Para 4). Click any paragraph to read why!`
+          : `<strong>Highlights Off:</strong> Toggle any structure or language button to inspect features inside the text.`;
+      }
+    }
+
+    function inspectMotParagraph(part) {
+      if (!structureHighlighted) return;
+      const box = document.getElementById(`mot-inspector-box`);
+      if (!box) return;
+      if (part === `thesis`) {
+        box.innerHTML = `<strong>THESIS (Paragraph 1):</strong> Introduces single-use plastic in schools and states the writer's clear stance: <em>"schools should reduce the use of single-use plastic..."</em>`;
+      } else if (part === `arguments1`) {
+        box.innerHTML = `<strong>ARGUMENT 1 (Paragraph 2):</strong> Uses the connective <em>Firstly</em> to explain decomposition time (hundreds of years) and pollution of soil, rivers, and marine life.`;
+      } else if (part === `arguments2`) {
+        box.innerHTML = `<strong>ARGUMENT 2 (Paragraph 3):</strong> Uses <em>Secondly</em> and <em>In addition</em> to show social and economic benefits: responsible habits, refill stations, and saving money.`;
+      } else if (part === `reiteration`) {
+        box.innerHTML = `<strong>REITERATION (Paragraph 4):</strong> Begins with <em>In conclusion</em> and restates the writer's core claim that schools should reduce single-use plastic.`;
+      }
+    }
+
+    function toggleLangHighlight(type, btn) {
+      activeLangFeatures[type] = !activeLangFeatures[type];
+      if (btn) btn.classList.toggle(`is-selected`, activeLangFeatures[type]);
+      const clsMap = {
+        present: `active-present`,
+        modal: `active-modal`,
+        connective: `active-connective`,
+        evaluative: `active-evaluative`,
+        vocab: `active-vocab`
+      };
+      document.querySelectorAll(`.lang-span[data-lang="${type}"]`).forEach((el) => {
+        el.classList.toggle(clsMap[type], activeLangFeatures[type]);
+      });
+    }
+
+    function inspectGrammar(event, type, word) {
+      event.stopPropagation();
+      const box = document.getElementById(`mot-inspector-box`);
+      if (!box) return;
+      const descriptions = {
+        present: `<strong>Simple Present Tense ("${word}"):</strong> Expresses general facts and habitual reality in analytical exposition.`,
+        modal: `<strong>Modal Verb ("${word}"):</strong> Signals recommendation, obligation, or possibility to persuade the reader.`,
+        connective: `<strong>Logical Connective ("${word}"):</strong> Organizes arguments sequentially or signals cause, addition, and conclusion.`,
+        evaluative: `<strong>Evaluative Word ("${word}"):</strong> Shows the writer's value judgment to persuade readers.`,
+        vocab: `<strong>Key Environmental Term ("${word}"):</strong> Essential topic vocabulary from BKOF. Click BKOF to hear its pronunciation!`
+      };
+      box.innerHTML = descriptions[type] || ``;
+    }
+
+    function renderThinkAloud() {
+      const data = THINK_ALOUD_DATA[thinkAloudSkillIdx];
+      const step = data.steps[thinkAloudStepIdx];
+      const stage = document.getElementById(`think-aloud-stage`);
+      const ind = document.getElementById(`ta-step-indicator`);
+      const prev = document.getElementById(`ta-prev-btn`);
+      const next = document.getElementById(`ta-next-btn`);
+
+      if (stage) {
+        stage.innerHTML = `
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-sm); align-items: center;">
+            <span class="tag tag-water">${data.skill}</span>
+            <span class="tag tag-ochre">${step.label}</span>
+          </div>
+          <p style="font-weight: 700;">Question: ${data.question}</p>
+          <div class="feedback-box">
+            <strong>Teacher Think-Aloud:</strong> ${step.text}
+          </div>
+        `;
+      }
+      if (ind) ind.textContent = `Step ${thinkAloudStepIdx + 1} of ${data.steps.length}`;
+      if (prev) prev.disabled = thinkAloudStepIdx === 0;
+      if (next) next.disabled = thinkAloudStepIdx === data.steps.length - 1;
+    }
+
+    function selectThinkAloudSkill(idx, btn) {
+      thinkAloudSkillIdx = idx;
+      thinkAloudStepIdx = 0;
+      if (btn && btn.parentElement) {
+        btn.parentElement.querySelectorAll(`.choice-chip`).forEach((c) => c.classList.remove(`is-selected`));
+        btn.classList.add(`is-selected`);
+      }
+      renderThinkAloud();
+    }
+
+    function stepThinkAloud(delta) {
+      const max = THINK_ALOUD_DATA[thinkAloudSkillIdx].steps.length - 1;
+      thinkAloudStepIdx = Math.max(0, Math.min(max, thinkAloudStepIdx + delta));
+      renderThinkAloud();
+    }
+
+    /* =========================================================
+       STEP 4: JCOT (6 ORIGINAL QUESTIONS, ANSWER GATING)
+    ========================================================= */
+    function renderJcot() {
+      const q = JCOT_QUESTIONS[appState.jcotIndex];
+      if (!q) return;
+
+      const nav = document.getElementById(`jcot-q-nav`);
+      if (nav) {
+        nav.innerHTML = JCOT_QUESTIONS.map((item, i) => {
+          const checked = appState.jcotChecked[item.id];
+          let cls = `choice-chip`;
+          if (i === appState.jcotIndex) cls += ` is-selected`;
+          return `<button type="button" class="${cls}" onclick="jumpJcot(${i})">Q${item.id}${checked ? ` &#10003;` : ``}</button>`;
+        }).join(``);
+      }
+
+      const cat = document.getElementById(`jcot-q-category`);
+      const cnt = document.getElementById(`jcot-q-counter`);
+      const txt = document.getElementById(`jcot-q-text`);
+      if (cat) cat.textContent = q.category;
+      if (cnt) cnt.textContent = `Question ${appState.jcotIndex + 1} of ${JCOT_QUESTIONS.length}`;
+      if (txt) txt.textContent = q.prompt;
+
+      const inputArea = document.getElementById(`jcot-input-area`);
+      const savedAns = appState.jcotAnswers[q.id] || ``;
+      const isChecked = !!appState.jcotChecked[q.id];
+
+      if (inputArea) {
+        if (q.type === `open`) {
+          inputArea.innerHTML = `
+            <div class="field-group">
+              <label class="field-label" for="jcot-open-input">Your Group Answer</label>
+              <textarea class="field-textarea" id="jcot-open-input" placeholder="Discuss with your group and write your answer here..." oninput="saveJcotAnswer(${q.id}, this.value)"></textarea>
+            </div>
+          `;
+          const ta = document.getElementById(`jcot-open-input`);
+          if (ta) ta.value = savedAns;
+        } else {
+          inputArea.innerHTML = `
+            <div class="mcq-list">
+              ${q.options.map((opt) => {
+                let cls = `mcq-option`;
+                if (savedAns === opt.key) cls += ` is-selected`;
+                if (isChecked) {
+                  if (opt.key === q.correct) cls += ` is-correct-reveal`;
+                  else if (savedAns === opt.key) cls += ` is-wrong-reveal`;
+                }
+                return `
+                  <button type="button" class="${cls}" onclick="selectJcotMcq(${q.id}, '${opt.key}')">
+                    <span class="mcq-letter">${opt.key}</span>
+                    <span>${opt.text}</span>
+                  </button>
+                `;
+              }).join(``)}
+            </div>
+          `;
+        }
+      }
+
+      const evInput = document.getElementById(`jcot-evidence-input`);
+      if (evInput) evInput.value = appState.jcotEvidence[q.id] || ``;
+
+      renderJcotFeedback(q);
+      updateJcotSummary();
+    }
+
+    function renderJcotFeedback(q) {
+      const fb = document.getElementById(`jcot-feedback-area`);
+      if (!fb) return;
+      const status = appState.jcotChecked[q.id];
+      if (!status) {
+        fb.innerHTML = ``;
+        return;
+      }
+      const isOk = status === `correct`;
+      fb.innerHTML = `
+        <div class="feedback-box ${isOk ? `` : `is-warning`}">
+          <strong>${isOk ? `Well Done! Your answer aligns with the official key.` : `Review Needed — Compare with the Suggested Answer:`}</strong>
+          <div><strong>Official Answer:</strong> ${q.officialAnswer}</div>
+          <div><strong>Textual Evidence:</strong> ${q.evidence}</div>
+          <div><strong>Explanation:</strong> ${q.explanation}</div>
+        </div>
+      `;
+    }
+
+    function jumpJcot(idx) {
+      appState.jcotIndex = idx;
+      renderJcot();
+      persistState();
+    }
+
+    function prevJcotQuestion() {
+      if (appState.jcotIndex > 0) {
+        appState.jcotIndex--;
+        renderJcot();
+        persistState();
+      }
+    }
+
+    function nextJcotQuestion() {
+      if (appState.jcotIndex < JCOT_QUESTIONS.length - 1) {
+        appState.jcotIndex++;
+        renderJcot();
+        persistState();
+      }
+    }
+
+    function saveJcotAnswer(qId, val) {
+      appState.jcotAnswers[qId] = val;
+      persistState();
+    }
+
+    function saveJcotEvidence(val) {
+      const q = JCOT_QUESTIONS[appState.jcotIndex];
+      if (!q) return;
+      appState.jcotEvidence[q.id] = val;
+      persistState();
+    }
+
+    function selectJcotMcq(qId, optKey) {
+      appState.jcotAnswers[qId] = optKey;
+      renderJcot();
+      persistState();
+    }
+
+    function checkJcotCurrent() {
+      const q = JCOT_QUESTIONS[appState.jcotIndex];
+      if (!q) return;
+      const ans = (appState.jcotAnswers[q.id] || ``).trim();
+      const fb = document.getElementById(`jcot-feedback-area`);
+      if (!ans && !appState.presentationMode) {
+        if (fb) {
+          fb.innerHTML = `<div class="feedback-box is-warning"><strong>Attempt First:</strong> Please enter or select your group's answer before checking the official key.</div>`;
+        }
+        return;
+      }
+      let correct = false;
+      if (q.type === `mcq`) {
+        correct = ans === q.correct;
+      } else {
+        const lower = ans.toLowerCase();
+        correct = q.keywords.some((kw) => lower.includes(kw));
+      }
+      appState.jcotChecked[q.id] = correct ? `correct` : `review`;
+      renderJcot();
+      persistState();
+    }
+
+    function updateJcotSummary() {
+      const el = document.getElementById(`jcot-score-summary`);
+      if (!el) return;
+      const correctCount = Object.values(appState.jcotChecked).filter((v) => v === `correct`).length;
+      el.textContent = `${correctCount} / ${JCOT_QUESTIONS.length} Verified Correctly`;
+    }
+
+    function saveExplainAnswer(val) {
+      appState.explainAnswer = val;
+      const st = document.getElementById(`explain-answer-status`);
+      if (st) {
+        st.textContent = val.toLowerCase().includes(`because`) ? `Great structure! Evidence-based explanation saved.` : `Tip: Include "because the text says..." to link your claim to evidence.`;
+      }
+      persistState();
+    }
+
+    /* =========================================================
+       STEP 5: ICOT (INDEPENDENT ASSESSMENT & SCORING / 9 * 100)
+    ========================================================= */
+    function renderIcot() {
+      const q = ICOT_QUESTIONS[appState.icotIndex];
+      if (!q) return;
+
+      const nav = document.getElementById(`icot-q-nav`);
+      if (nav) {
+        nav.innerHTML = ICOT_QUESTIONS.map((item, i) => {
+          const answered = !!appState.icotAnswers[item.id];
+          let cls = `choice-chip`;
+          if (i === appState.icotIndex) cls += ` is-selected`;
+          return `<button type="button" class="${cls}" onclick="jumpIcot(${i})">Q${item.id}${answered ? ` &#10003;` : ``}</button>`;
+        }).join(``);
+      }
+
+      const skill = document.getElementById(`icot-q-skill`);
+      const cnt = document.getElementById(`icot-q-counter`);
+      const prompt = document.getElementById(`icot-q-prompt`);
+      const list = document.getElementById(`icot-options-list`);
+
+      if (skill) skill.textContent = `Question ${q.id} · ${q.skill}`;
+      if (cnt) cnt.textContent = `${appState.icotIndex + 1} of ${ICOT_QUESTIONS.length}`;
+      if (prompt) prompt.textContent = q.prompt;
+
+      const selected = appState.icotAnswers[q.id];
+      if (list) {
+        list.innerHTML = q.options.map((opt) => {
+          let cls = `mcq-option`;
+          if (selected === opt.key) cls += ` is-selected`;
+          if (appState.icotSubmitted) {
+            if (opt.key === q.correct) cls += ` is-correct-reveal`;
+            else if (selected === opt.key) cls += ` is-wrong-reveal`;
+          }
+          return `
+            <button type="button" class="${cls}" ${appState.icotSubmitted ? `disabled` : ``} onclick="selectIcotOption(${q.id}, '${opt.key}')">
+              <span class="mcq-letter">${opt.key}</span>
+              <span>${opt.text}</span>
+            </button>
+          `;
+        }).join(``);
+      }
+
+      const subBtn = document.getElementById(`btn-submit-icot`);
+      if (subBtn) subBtn.disabled = appState.icotSubmitted;
+
+      if (appState.icotSubmitted) renderIcotResults();
+      else {
+        const resPanel = document.getElementById(`icot-results-panel`);
+        if (resPanel) resPanel.style.display = `none`;
+      }
+    }
+
+    function jumpIcot(idx) {
+      appState.icotIndex = idx;
+      renderIcot();
+      persistState();
+    }
+
+    function prevIcotQuestion() {
+      if (appState.icotIndex > 0) {
+        appState.icotIndex--;
+        renderIcot();
+      }
+    }
+
+    function nextIcotQuestion() {
+      if (appState.icotIndex < ICOT_QUESTIONS.length - 1) {
+        appState.icotIndex++;
+        renderIcot();
+      }
+    }
+
+    function selectIcotOption(qId, key) {
+      if (appState.icotSubmitted) return;
+      appState.icotAnswers[qId] = key;
+      const msg = document.getElementById(`icot-validation-msg`);
+      if (msg) msg.textContent = ``;
+      renderIcot();
+      persistState();
+    }
+
+    function submitIcotTest() {
+      const answeredAll = ICOT_QUESTIONS.every((q) => !!appState.icotAnswers[q.id]);
+      const msg = document.getElementById(`icot-validation-msg`);
+      if (!answeredAll) {
+        if (msg) msg.textContent = `Please answer all 3 questions independently before submitting.`;
+        return;
+      }
+      if (msg) msg.textContent = ``;
+      appState.icotSubmitted = true;
+      renderIcot();
+      persistState();
+    }
+
+    function renderIcotResults() {
+      const panel = document.getElementById(`icot-results-panel`);
+      if (!panel) return;
+      panel.style.display = `flex`;
+
+      let points = 0;
+      const breakdownHtml = ICOT_QUESTIONS.map((q) => {
+        const userAns = appState.icotAnswers[q.id];
+        const isCorrect = userAns === q.correct;
+        const pts = isCorrect ? 3 : 0;
+        points += pts;
+        const userOpt = q.options.find((o) => o.key === userAns);
+        const corrOpt = q.options.find((o) => o.key === q.correct);
+        return `
+          <div class="card-surface-deep" style="background: var(--background); border-left: 4px solid ${isCorrect ? `var(--positive)` : `var(--error)`};">
+            <div style="display: flex; justify-content: space-between; gap: var(--space-sm); flex-wrap: wrap;">
+              <strong>Q${q.id} · ${q.skill}</strong>
+              <span class="tag ${isCorrect ? `tag-leaf` : `tag-ochre`}">${pts} / 3 Points</span>
+            </div>
+            <div>Your Answer: <strong>${userAns}. ${userOpt ? userOpt.text : ``}</strong> ${isCorrect ? `(Correct)` : `(Incorrect)`}</div>
+            <div>Correct Answer: <strong>${q.correct}. ${corrOpt ? corrOpt.text : ``}</strong></div>
+            <div><strong>Textual Evidence:</strong> ${q.evidence}</div>
+            <div style="color: var(--on-surface-variant);">${q.explanation}</div>
+          </div>
+        `;
+      }).join(``);
+
+      const finalScore = Math.round((points / 9) * 100);
+      const passed = finalScore >= 76;
+
+      const headline = document.getElementById(`icot-score-headline`);
+      const badge = document.getElementById(`icot-mastery-badge`);
+      const note = document.getElementById(`icot-score-formula-note`);
+      const list = document.getElementById(`icot-review-list`);
+      const nextPathBtn = document.getElementById(`btn-icot-next-path`);
+
+      if (headline) headline.textContent = `Obtained Score: ${points} / 9 · Final Score: ${finalScore}%`;
+      if (badge) badge.textContent = passed ? `Mastery Achieved (>= 76)` : `Needs Remedial Review (< 76)`;
+      if (note) note.textContent = `Product Scoring Formula: (${points} ÷ 9) × 100 = ${finalScore}%. Mastery threshold is 76 (Good). Each competency awards up to 3 points.`;
+      if (list) list.innerHTML = breakdownHtml;
+      if (nextPathBtn) {
+        nextPathBtn.textContent = passed ? `Open Enrichment Challenge \u2192` : `Open Remedial Practice \u2192`;
+        nextPathBtn.onclick = () => {
+          goToStep(7);
+          const targetTab = passed ? `enrichment` : `remedial`;
+          const btn = document.querySelector(`.subtab-btn[onclick*="${targetTab}"]`);
+          switchToolkitTab(targetTab, btn);
+        };
+      }
+    }
+
+    function retakeIcotTest() {
+      appState.icotAnswers = {};
+      appState.icotSubmitted = false;
+      appState.icotIndex = 0;
+      renderIcot();
+      persistState();
+    }
+
+    /* =========================================================
+       STEP 6: SUMMARY QUIZ & STUDENT REFLECTION
+    ========================================================= */
+    function renderSummaryQuiz() {
+      const box = document.getElementById(`summary-quiz-container`);
+      if (!box) return;
+      box.innerHTML = SUMMARY_QUIZ.map((item, idx) => {
+        const chosen = appState.summaryQuizAnswers[item.id];
+        return `
+          <div class="card-surface-deep">
+            <strong>${idx + 1}. ${item.q}</strong>
+            <div class="chip-row">
+              ${item.options.map((opt, oi) => {
+                let cls = `choice-chip`;
+                if (chosen === oi) cls += ` is-selected`;
+                return `<button type="button" class="${cls}" onclick="pickSummaryAns('${item.id}', ${oi})">${opt}</button>`;
+              }).join(``)}
+            </div>
+          </div>
+        `;
+      }).join(``);
+
+      if (appState.summaryQuizChecked) showSummaryQuizScore();
+    }
+
+    function pickSummaryAns(id, optIdx) {
+      appState.summaryQuizAnswers[id] = optIdx;
+      appState.summaryQuizChecked = false;
+      renderSummaryQuiz();
+      persistState();
+    }
+
+    function checkSummaryQuiz() {
+      appState.summaryQuizChecked = true;
+      showSummaryQuizScore();
+      persistState();
+    }
+
+    function showSummaryQuizScore() {
+      let score = 0;
+      SUMMARY_QUIZ.forEach((item) => {
+        if (appState.summaryQuizAnswers[item.id] === item.correct) score++;
+      });
+      const el = document.getElementById(`summary-quiz-score`);
+      if (el) el.textContent = `Score: ${score} / ${SUMMARY_QUIZ.length} Correct`;
+    }
+
+    function saveReflection(key, val) {
+      appState.reflections[key] = val;
+      persistState();
+    }
+
+    function submitReflectionForm() {
+      appState.reflectionSubmitted = true;
+      const st = document.getElementById(`reflection-submit-status`);
+      if (st) st.textContent = `Reflection saved! Thank you for evaluating your learning today.`;
+      persistState();
+    }
+
+    /* =========================================================
+       STEP 7: TOOLKIT (REMEDIAL, ENRICHMENT, RUBRIC, GLOSSARY, TEACHER)
+    ========================================================= */
+    function switchToolkitTab(tabKey, btn) {
+      document.querySelectorAll(`.subtab-btn`).forEach((b) => b.classList.remove(`is-active`));
+      if (btn) btn.classList.add(`is-active`);
+      document.querySelectorAll(`.subtab-panel`).forEach((p) => p.classList.remove(`is-active`));
+      const target = document.getElementById(`tab-${tabKey}`);
+      if (target) target.classList.add(`is-active`);
+    }
+
+    function renderRemedialAndEnrichment() {
+      const remBox = document.getElementById(`remedial-questions-box`);
+      if (remBox) {
+        remBox.innerHTML = REMEDIAL_QUESTIONS.map((item) => {
+          const sel = appState.remedialAnswers[item.id];
+          return `
+            <div class="card-surface-deep">
+              <strong>${item.q}</strong>
+              <div class="chip-row">
+                ${item.options.map((opt, i) => `
+                  <button type="button" class="choice-chip ${sel === i ? `is-selected` : ``}" onclick="pickRemedial('${item.id}', ${i})">${opt}</button>
+                `).join(``)}
+              </div>
+              <div id="rem-fb-${item.id}" style="font-size: 0.9rem; color: var(--on-surface-variant);"></div>
+            </div>
+          `;
+        }).join(``);
+      }
+
+      const enrBox = document.getElementById(`enrichment-questions-box`);
+      if (enrBox) {
+        enrBox.innerHTML = ENRICHMENT_QUESTIONS.map((item) => {
+          const sel = appState.enrichmentAnswers[item.id];
+          return `
+            <div class="card-surface-deep">
+              <strong>${item.q}</strong>
+              <div class="chip-row">
+                ${item.options.map((opt, i) => `
+                  <button type="button" class="choice-chip ${sel === i ? `is-selected` : ``}" onclick="pickEnrichment('${item.id}', ${i})">${opt}</button>
+                `).join(``)}
+              </div>
+              <div id="enr-fb-${item.id}" style="font-size: 0.9rem; color: var(--on-surface-variant);"></div>
+            </div>
+          `;
+        }).join(``);
+      }
+    }
+
+    function pickRemedial(id, i) {
+      appState.remedialAnswers[id] = i;
+      renderRemedialAndEnrichment();
+      persistState();
+    }
+
+    function checkRemedialAnswers() {
+      let score = 0;
+      REMEDIAL_QUESTIONS.forEach((item) => {
+        const ok = appState.remedialAnswers[item.id] === item.correct;
+        if (ok) score++;
+        const fb = document.getElementById(`rem-fb-${item.id}`);
+        if (fb) fb.innerHTML = `${ok ? `Correct!` : `Try again —`} <strong>Evidence:</strong> ${item.evidence}`;
+      });
+      const msg = document.getElementById(`remedial-score-msg`);
+      if (msg) msg.textContent = `Remedial Score: ${score} / 3`;
+    }
+
+    function pickEnrichment(id, i) {
+      appState.enrichmentAnswers[id] = i;
+      renderRemedialAndEnrichment();
+      persistState();
+    }
+
+    function checkEnrichmentAnswers() {
+      let score = 0;
+      ENRICHMENT_QUESTIONS.forEach((item) => {
+        const ok = appState.enrichmentAnswers[item.id] === item.correct;
+        if (ok) score++;
+        const fb = document.getElementById(`enr-fb-${item.id}`);
+        if (fb) fb.innerHTML = `${ok ? `Correct!` : `Review text —`} <strong>Evidence:</strong> ${item.evidence}`;
+      });
+      const msg = document.getElementById(`enrichment-score-msg`);
+      if (msg) msg.textContent = `Enrichment Score: ${score} / 3`;
+    }
+
+    function saveCustomTkaChallenge() {
+      const typeEl = document.getElementById(`custom-tka-type`);
+      const qEl = document.getElementById(`custom-tka-question`);
+      const evEl = document.getElementById(`custom-tka-evidence`);
+      appState.customTka = {
+        type: typeEl ? typeEl.value : `Inferential Understanding`,
+        question: qEl ? qEl.value : ``,
+        evidence: evEl ? evEl.value : ``
+      };
+      const st = document.getElementById(`custom-tka-status`);
+      if (st) st.textContent = `Challenge question saved!`;
+      persistState();
+    }
+
+    function computePerformanceRubric() {
+      const a = Number((document.getElementById(`rubric-acc`) || {}).value || 3);
+      const e = Number((document.getElementById(`rubric-evi`) || {}).value || 3);
+      const x = Number((document.getElementById(`rubric-exp`) || {}).value || 3);
+      const p = Number((document.getElementById(`rubric-pre`) || {}).value || 3);
+      const total = a + e + x + p;
+      const pct = ((total / 16) * 100).toFixed(1);
+      const res = document.getElementById(`performance-rubric-result`);
+      if (res) res.innerHTML = `<strong>Calculated Performance Score:</strong> ${total} / 16 = <strong>${pct}%</strong>`;
+    }
+
+    function renderGlossary() {
+      const grid = document.getElementById(`glossary-grid`);
+      if (!grid) return;
+      grid.innerHTML = GLOSSARY_ITEMS.map((g, idx) => `
+        <div class="vocab-card is-revealed" role="button" tabindex="0" onclick="speakGlossaryItem(${idx}, this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();speakGlossaryItem(${idx}, this);}">
+          <div class="vocab-top">
+            <div class="vocab-word" style="font-size: 1.1rem;">${g.term}</div>
+            <span class="audio-pill">&#128266; Listen</span>
+          </div>
+          <div class="vocab-detail" style="display: flex;">
+            <div>${g.def}</div>
+          </div>
+        </div>
+      `).join(``);
+    }
+
+    function speakGlossaryItem(idx, cardEl) {
+      const g = GLOSSARY_ITEMS[idx];
+      if (!g) return;
+      speakText(`${g.term}. ${g.def}`, cardEl);
+    }
+
+    function saveTeacherRef(key, val) {
+      appState.teacherReflections[key] = val;
+      persistState();
+    }
+
+    function exportLessonReport() {
+      const icotPts = ICOT_QUESTIONS.reduce((acc, q) => acc + (appState.icotAnswers[q.id] === q.correct ? 3 : 0), 0);
+      const icotPct = Math.round((icotPts / 9) * 100);
+      const lines = [
+        `SAY NO TO SINGLE-USE PLASTIC — LESSON REPORT`,
+        `=============================================`,
+        `Vocabulary Matching Score: ${appState.matchingScore} / 5`,
+        `ICOT Assessment Score: ${icotPts} / 9 (${icotPct}%)`,
+        ``,
+        `EXPLAIN YOUR ANSWER:`,
+        appState.explainAnswer || `(Not entered)`,
+        ``,
+        `STUDENT REFLECTIONS:`,
+        `1. Learned today: ${appState.reflections.r1 || `(Not entered)`}`,
+        `2. Finding info: ${appState.reflections.r2 || `(Not entered)`}`,
+        `3. Conclusions & arguments: ${appState.reflections.r3 || `(Not entered)`}`,
+        `4. Difficulties: ${appState.reflections.r4 || `(Not entered)`}`,
+        `5. Next steps: ${appState.reflections.r5 || `(Not entered)`}`,
+        ``,
+        `TEACHER REFLECTIONS:`,
+        `1. Objectives achieved: ${appState.teacherReflections.t1 || `(Not entered)`}`,
+        `2. Worked well: ${appState.teacherReflections.t2 || `(Not entered)`}`,
+        `3. Reading skills check: ${appState.teacherReflections.t3 || `(Not entered)`}`,
+        `4. Difficulties observed: ${appState.teacherReflections.t4 || `(Not entered)`}`,
+        `5. Next improvements: ${appState.teacherReflections.t5 || `(Not entered)`}`
+      ].join(`\n`);
+
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.triggerFileDownload === `function`) {
+          window.notebookAppApi.triggerFileDownload({
+            content: lines,
+            contentType: `text/plain`,
+            encoding: `UTF-8`,
+            filename: `analytical-exposition-lesson-report.txt`
+          });
+          const st = document.getElementById(`teacher-export-status`);
+          if (st) st.textContent = `Report downloaded.`;
+        }
+      } catch (e) {}
+    }
+
+    /* =========================================================
+       RESTORE & INITIALIZE
+    ========================================================= */
+    function restoreUI() {
+      applyPresentationMode();
+
+      const btnRate = document.getElementById(`btn-speech-rate`);
+      if (btnRate) btnRate.textContent = appState.speechRate === 1.0 ? `Speech Speed: Normal (1.0x)` : `Speech Speed: Slow & Clear (0.72x)`;
+
+      const w1 = document.getElementById(`warmup-q1`);
+      const w2 = document.getElementById(`warmup-q2`);
+      if (w1) w1.value = appState.warmup.q1 || ``;
+      if (w2) w2.value = appState.warmup.q2 || ``;
+
+      const expBox = document.getElementById(`explain-answer-box`);
+      if (expBox) expBox.value = appState.explainAnswer || ``;
+
+      [`r1`, `r2`, `r3`, `r4`, `r5`].forEach((rk, i) => {
+        const el = document.getElementById(`ref-q${i + 1}`);
+        if (el) el.value = appState.reflections[rk] || ``;
+      });
+      [`t1`, `t2`, `t3`, `t4`, `t5`].forEach((tk, i) => {
+        const el = document.getElementById(`tref-${i + 1}`);
+        if (el) el.value = appState.teacherReflections[tk] || ``;
+      });
+
+      const ctType = document.getElementById(`custom-tka-type`);
+      const ctQ = document.getElementById(`custom-tka-question`);
+      const ctE = document.getElementById(`custom-tka-evidence`);
+      if (ctType && appState.customTka.type) ctType.value = appState.customTka.type;
+      if (ctQ) ctQ.value = appState.customTka.question || ``;
+      if (ctE) ctE.value = appState.customTka.evidence || ``;
+
+      renderVocabCards();
+      renderMatchingBoard();
+      selectStructureNode(`thesis`, document.querySelector(`.structure-node`));
+      renderThinkAloud();
+      renderJcot();
+      renderIcot();
+      renderSummaryQuiz();
+      renderRemedialAndEnrichment();
+      computePerformanceRubric();
+      renderGlossary();
+      updateProgressIndicator();
+    }
+
+    async function initApp() {
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.getAppState === `function`) {
+          const saved = await window.notebookAppApi.getAppState();
+          if (saved && typeof saved === `object`) {
+            appState = Object.assign({}, appState, saved);
+          }
+        }
+      } catch (e) {
+        // Proceed with default state
+      }
+
+      restoreUI();
+      goToStep(appState.currentStep || 0);
+
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.notifyAppReady === `function`) {
+          window.notebookAppApi.notifyAppReady();
+        }
+      } catch (e) {}
+    }
+
+    if (document.readyState === `loading`) {
+      document.addEventListener(`DOMContentLoaded`, initApp);
+    } else {
+      initApp();
+    }
+  </script>
+</body>
+</html>
+Menampilkan Interactive_English_Learning__Say_No_to_Plastic.html.
